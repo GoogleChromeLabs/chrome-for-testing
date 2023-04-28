@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+ Copyright 2023 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the “License”);
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an “AS IS” BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<html lang="en">
+<meta charset="utf-8">
+<title>Chrome for Testing availability</title>
+<meta content="width=device-width" name="viewport">
+<style>
+	html { font: 1rem/1.6 sans-serif; }
+	::selection { background: dodgerblue; color: #FFF; }
+	.status-ok h2::after { content: ' \2705'; }
+	.status-not-ok h2::after { content: ' \274C'; }
+	.table-wrapper { overflow-x: auto; }
+	@media (width >= 60rem) {
+		.summary { font-size: 2rem; }
+	}
+	a { display: block; color: #3E4FB1; padding: 0.2rem; }
+	a:hover, a:focus { background: dodgerblue; color: #FFF; }
+	table { border-collapse: collapse; width: 100%; max-width: 78rem; margin-bottom: 1em; font-variant-numeric: tabular-nums; }
+	.summary table { width: auto; }
+	th, td { padding: 0.5em; border: 1px solid #FFF; }
+	tr.status-ok { background: lightgreen; }
+	tr.status-ok:hover { background: #60E660; }
+	tr.status-not-ok { background: lightpink; }
+	tr.status-not-ok:hover { background: #FF8597; }
+</style>
+<link rel="alternate" href="data.json" type="application/json">
+<h1>Chrome for Testing availability</h1>
+<p>Last updated @ <time>%%%TIMESTAMP%%%</time></p>
+%%%DATA%%%
+<script>
+document.body.addEventListener('click', (event) => {
+	const target = event.target;
+	if (target.matches('code, th, td')) {
+		const selection = window.getSelection();
+		const range = new Range();
+		range.selectNodeContents(target);
+		selection.removeAllRanges();
+		selection.addRange(range);
+	}
+});
+</script>
