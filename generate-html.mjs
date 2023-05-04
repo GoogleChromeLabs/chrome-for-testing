@@ -18,6 +18,9 @@ import fs from 'node:fs/promises';
 import { escape as escapeHtml } from 'lodash-es';
 import { minify as minifyHtml } from 'html-minifier-terser';
 
+const OK = '\u2705';
+const NOT_OK = '\u274C';
+
 const render = (data) => {
 	const summary = [];
 	const main = [];
@@ -40,7 +43,7 @@ const render = (data) => {
 				<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
 				<td><code>${escapeHtml(version)}</code>
 				<td><code>r${escapeHtml(revision)}</code>
-				<td>${ channelData.ok ? '\u2705' : '\u274C' }
+				<td>${ channelData.ok ? OK : NOT_OK }
 		`);
 		main.push(`
 			<section id="${escapeHtml(channel.toLowerCase())}" class="status-${
@@ -80,11 +83,19 @@ const render = (data) => {
 	`;
 };
 
+const renderIcon = (data) => {
+	const emoji = data.ok ? OK : NOT_OK;
+	return `data:image/svg+xml,${encodeURIComponent(
+		`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${emoji}</text></svg>`
+	)}`;
+};
+
 const json = await fs.readFile('./data/output.json', 'utf8');
 const data = JSON.parse(json);
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');
 const html = htmlTemplate.toString()
+	.replace('%%%ICON%%%', renderIcon(data))
 	.replace('%%%DATA%%%', render(data))
 	.replace('%%%TIMESTAMP%%%', data.timestamp);
 const minifiedHtml = await minifyHtml(html, {

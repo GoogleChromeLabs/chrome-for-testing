@@ -115,15 +115,18 @@ const findVersionForChannel = async (channel = 'Stable') => {
 
 const allResults = {
 	timestamp: new Date().toISOString(),
+	ok: false,
 	channels: {},
 };
-allResults.channels.Stable = await findVersionForChannel('Stable');
-console.log('');
-allResults.channels.Beta = await findVersionForChannel('Beta');
-console.log('');
-allResults.channels.Dev = await findVersionForChannel('Dev');
-console.log('');
-allResults.channels.Canary = await findVersionForChannel('Canary');
+const channels = ['Stable', 'Beta', 'Dev', 'Canary'];
+let hasFailure = false;
+for (const channel of channels) {
+	const result = await findVersionForChannel(channel);
+	if (!result.ok) hasFailure = true;
+	allResults.channels[channel] = result;
+	console.log('');
+}
+allResults.ok = !hasFailure;
 
 const json = JSON.stringify(allResults, null, '\t');
 await fs.writeFile('./data/output.json', `${json}\n`);
