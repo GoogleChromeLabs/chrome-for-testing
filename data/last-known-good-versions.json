@@ -1,0 +1,25 @@
+{
+	"timestamp": "2023-05-08T10:59:00.937Z",
+	"channels": {
+		"Stable": {
+			"channel": "Stable",
+			"version": "113.0.5672.63",
+			"revision": "1121455"
+		},
+		"Beta": {
+			"channel": "Beta",
+			"version": "114.0.5735.16",
+			"revision": "1135570"
+		},
+		"Dev": {
+			"channel": "Dev",
+			"version": "115.0.5750.0",
+			"revision": "1139213"
+		},
+		"Canary": {
+			"channel": "Canary",
+			"version": "115.0.5757.0",
+			"revision": "1140605"
+		}
+	}
+}
