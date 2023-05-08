@@ -28,7 +28,8 @@
 	@media (width >= 60rem) {
 		.summary { font-size: 2rem; }
 	}
-	a { display: block; color: #3E4FB1; padding: 0.2rem; }
+	a { color: #3E4FB1; }
+	table a { display: block; padding: 0.2rem; }
 	a:hover, a:focus { background: dodgerblue; color: #FFF; }
 	table { border-collapse: collapse; width: 100%; max-width: 78rem; margin-bottom: 1em; font-variant-numeric: tabular-nums; }
 	.summary table { width: auto; }
@@ -41,6 +42,7 @@
 <link rel="icon" href="%%%ICON%%%">
 <link rel="alternate" href="dashboard.json" type="application/json">
 <h1>Chrome for Testing availability</h1>
+<p>This page lists the latest cross-platform versions per Chrome release channel and highlights the availability of the corresponding Chrome for Testing assets. Looking for the latest <em>available</em> versions instead? See <a href="last-known-good-versions.json"><code>last-known-good-versions.json</code></a>.</p>
 <p>Last updated @ <time>%%%TIMESTAMP%%%</time></p>
 %%%DATA%%%
 <script>
