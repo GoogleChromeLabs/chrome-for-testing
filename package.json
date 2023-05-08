@@ -3,8 +3,9 @@
 	"scripts": {
 		"check": "node --no-warnings check-version.mjs",
 		"find": "node --no-warnings find-version.mjs",
-		"render": "node generate-html.mjs && jsesc --object --json < data/output.json > dist/data.json",
-		"build": "npm run find && npm run render"
+		"json": "node generate-extra-json.mjs && jsesc --object --json < data/output.json > dist/data.json && jsesc --object --json < data/channels-to-versions.json > dist/channels-to-versions.json",
+		"render": "node generate-html.mjs",
+		"build": "npm run find && npm run json && npm run render"
 	},
 	"devDependencies": {
 		"html-minifier-terser": "^7.2.0",
