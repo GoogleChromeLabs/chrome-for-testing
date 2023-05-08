@@ -1,4 +1,7 @@
-data
+data/channels-to-versions.json
+data/output.json
+!data/last-known-good-versions.json
+
 dist
 
 # Installed npm modules

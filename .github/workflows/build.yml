@@ -42,8 +42,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Update website
-        run: npm run find && npm run render
+      - name: Build
+        run: npm run build
+
+      - name: Update last known good versions per channel
+        run: |
+          git config user.name 'Chrome for Testing bot'
+          git config user.email 'mathias+cft@chromium.org'
+          git add data/last-known-good-versions.json
+          git commit data/last-known-good-versions.json -m "Update last known good versions per channel" || true
+          git push
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4

@@ -16,14 +16,54 @@
 
 import fs from 'node:fs/promises';
 
-const json = await fs.readFile('./data/output.json', 'utf8');
-const data = JSON.parse(json);
+const readJsonFile = async (filePath) => {
+	const json = await fs.readFile(filePath, 'utf8');
+	const data = JSON.parse(json);
+	return data;
+};
 
-delete data.ok;
-for (const channelData of Object.values(data.channels)) {
-	delete channelData.ok;
-	delete channelData.downloads;
-}
+const writeJsonFile = async (filePath, data) => {
+	const json = JSON.stringify(data, null, '\t');
+	await fs.writeFile(filePath, `${json}\n`);
+};
 
-const output = JSON.stringify(data, null, '\t');
-await fs.writeFile('./data/channels-to-versions.json', `${output}\n`);
+const data = await readJsonFile('./data/output.json');
+
+const prepareChannelsToVersionsData = (data) => {
+	const copy = structuredClone(data);
+	delete copy.ok;
+	for (const channelData of Object.values(copy.channels)) {
+		delete channelData.ok;
+		delete channelData.downloads;
+	}
+	return copy;
+};
+
+const prepareLastKnownGoodVersionsData = async (data) => {
+	const lastKnownGoodVersions = await readJsonFile('./data/last-known-good-versions.json');
+	for (const channelData of Object.values(data.channels)) {
+		if (!channelData.ok) continue;
+		const channelName = channelData.channel;
+		const knownData = lastKnownGoodVersions.channels[channelName];
+		if (
+			knownData.version === channelData.version &&
+			knownData.revision === channelData.revision
+		) {
+			continue;
+		}
+		lastKnownGoodVersions.timestamp = new Date().toISOString();
+		knownData.version = channelData.version;
+		knownData.revision = channelData.revision;
+	}
+	return lastKnownGoodVersions;
+};
+
+await writeJsonFile(
+	'./data/channels-to-versions.json',
+	prepareChannelsToVersionsData(data)
+);
+
+await writeJsonFile(
+	'./data/last-known-good-versions.json',
+	await prepareLastKnownGoodVersionsData(data)
+);
