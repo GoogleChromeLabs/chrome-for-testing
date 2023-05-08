@@ -27,7 +27,7 @@ const writeJsonFile = async (filePath, data) => {
 	await fs.writeFile(filePath, `${json}\n`);
 };
 
-const data = await readJsonFile('./data/output.json');
+const data = await readJsonFile('./data/dashboard.json');
 
 const prepareChannelsToVersionsData = (data) => {
 	const copy = structuredClone(data);

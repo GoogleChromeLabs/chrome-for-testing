@@ -90,7 +90,7 @@ const renderIcon = (data) => {
 	)}`;
 };
 
-const json = await fs.readFile('./data/output.json', 'utf8');
+const json = await fs.readFile('./data/dashboard.json', 'utf8');
 const data = JSON.parse(json);
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');

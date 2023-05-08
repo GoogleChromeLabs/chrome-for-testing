@@ -129,4 +129,4 @@ for (const channel of channels) {
 allResults.ok = !hasFailure;
 
 const json = JSON.stringify(allResults, null, '\t');
-await fs.writeFile('./data/output.json', `${json}\n`);
+await fs.writeFile('./data/dashboard.json', `${json}\n`);

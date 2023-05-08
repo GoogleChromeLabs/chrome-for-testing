@@ -1,5 +1,5 @@
 data/channels-to-versions.json
-data/output.json
+data/dashboard.json
 !data/last-known-good-versions.json
 
 dist
