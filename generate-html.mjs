@@ -27,16 +27,20 @@ const render = (data) => {
 	for (const [channel, channelData] of Object.entries(data.channels)) {
 		const { version, revision, downloads } = channelData;
 		const list = [];
-		for (const download of downloads) {
-			list.push(
-				`<tr class="status-${
-					download.status === 200 ? 'ok' : 'not-ok'
-				}"><th><code>${escapeHtml(
-					download.platform
-				)}</code><td><code>${escapeHtml(
-					download.url
-				)}</code><td><code>${escapeHtml(download.status)}</code>`
-			);
+		for (const [binary, downloadsPerBinary] of Object.entries(downloads)) {
+			for (const download of downloadsPerBinary) {
+				list.push(
+					`<tr class="status-${
+						download.status === 200 ? 'ok' : 'not-ok'
+					}"><th><code>${escapeHtml(
+						binary
+					)}</code><th><code>${escapeHtml(
+						download.platform
+					)}</code><td><code>${escapeHtml(
+						download.url
+					)}</code><td><code>${escapeHtml(download.status)}</code>`
+				);
+			}
 		}
 		summary.push(`
 			<tr class="status-${ channelData.ok ? 'ok' : 'not-ok' }">
@@ -55,6 +59,7 @@ const render = (data) => {
 					<table>
 						<thead>
 							<tr>
+								<th>Binary
 								<th>Platform
 								<th>URL
 								<th>HTTP status

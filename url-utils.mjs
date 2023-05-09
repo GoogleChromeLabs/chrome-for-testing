@@ -27,6 +27,7 @@ export const platforms = new Set([
 
 export const binaries = new Set([
 	'chrome',
+	'chromedriver',
 ]);
 
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {

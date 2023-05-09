@@ -30,8 +30,11 @@ const findVersionForChannel = async (channel = 'Stable') => {
 		version: '0.0.0.0',
 		revision: '0',
 		ok: false,
-		downloads: [], // {platform, url, status}
+		downloads: {},
 	};
+	for (const binary of binaries) {
+		result.downloads[binary] = [];
+	}
 	console.log(`Checking the ${channel} channel…`);
 	const apiEndpoint = `https://chromiumdash.appspot.com/fetch_releases?channel=${channel}&num=1&platform=Win32,Windows,Mac,Linux`;
 	const response = await fetch(apiEndpoint);
@@ -56,23 +59,25 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	result.revision = minRevision;
 
 	const urls = [];
-	for (const platform of platforms) {
-		const url = makeDownloadUrl({
-			version: minVersion,
-			platform,
-			binary: 'chrome',
-		});
-		urls.push({ platform, url });
+	for (const binary of binaries) {
+		for (const platform of platforms) {
+			const url = makeDownloadUrl({
+				version: minVersion,
+				platform,
+				binary,
+			});
+			urls.push({ binary, platform, url });
+		}
 	}
 
 	let hasFailure = false;
-	for (const { platform, url } of urls) {
+	for (const { binary, platform, url } of urls) {
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
 			hasFailure = true;
 		}
-		result.downloads.push({ platform, url, status })
+		result.downloads[binary].push({ platform, url, status })
 		console.log(url, status);
 	}
 	console.log(hasFailure ? '\u274C NOT OK' : '\u2705 OK');
