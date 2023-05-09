@@ -3,7 +3,7 @@
 	"scripts": {
 		"check": "node --no-warnings check-version.mjs",
 		"find": "node --no-warnings find-version.mjs",
-		"json": "node generate-extra-json.mjs && jsesc --object --json < data/dashboard.json > dist/dashboard.json && jsesc --object --json < data/channels-to-versions.json > dist/channels-to-versions.json && jsesc --object --json < data/last-known-good-versions.json > dist/last-known-good-versions.json",
+		"json": "node generate-extra-json.mjs && jsesc --object --json < data/dashboard.json > dist/dashboard.json && jsesc --object --json < data/channels-to-versions.json > dist/channels-to-versions.json && jsesc --object --json < data/last-known-good-versions.json > dist/last-known-good-versions.json && jsesc --object --json < data/last-known-good-versions-with-downloads.json > dist/last-known-good-versions-with-downloads.json",
 		"render": "node generate-html.mjs",
 		"build": "npm run find && npm run json && npm run render"
 	},

@@ -15,6 +15,7 @@
  */
 
 import fs from 'node:fs/promises';
+import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
 
 const readJsonFile = async (filePath) => {
 	const json = await fs.readFile(filePath, 'utf8');
@@ -58,12 +59,39 @@ const prepareLastKnownGoodVersionsData = async (data) => {
 	return lastKnownGoodVersions;
 };
 
+const addDownloadsTolastKnownGoodVersionsData = (data) => {
+	for (const channelData of Object.values(data.channels)) {
+		const downloads = channelData.downloads = {};
+		for (const binary of binaries) {
+			const downloadsForThisBinary = downloads[binary] = [];
+			for (const platform of platforms) {
+				const url = makeDownloadUrl({
+					version: channelData.version,
+					platform: platform,
+					binary: binary,
+				});
+				downloadsForThisBinary.push({
+					platform: platform,
+					url: url,
+				});
+			}
+		}
+	}
+	return data;
+};
+
 await writeJsonFile(
 	'./data/channels-to-versions.json',
 	prepareChannelsToVersionsData(data)
 );
 
+const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(data);
 await writeJsonFile(
 	'./data/last-known-good-versions.json',
-	await prepareLastKnownGoodVersionsData(data)
+	lastKnownGoodVersionsData
+);
+
+await writeJsonFile(
+	'./data/last-known-good-versions-with-downloads.json',
+	addDownloadsTolastKnownGoodVersionsData(lastKnownGoodVersionsData)
 );

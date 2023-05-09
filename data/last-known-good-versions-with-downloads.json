@@ -1,0 +1,121 @@
+{
+	"timestamp": "2023-05-09T06:08:17.712Z",
+	"channels": {
+		"Stable": {
+			"channel": "Stable",
+			"version": "113.0.5672.63",
+			"revision": "1121455",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.63/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.63/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.63/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.63/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.63/win64/chrome-win64.zip"
+					}
+				]
+			}
+		},
+		"Beta": {
+			"channel": "Beta",
+			"version": "114.0.5735.16",
+			"revision": "1135570",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.16/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.16/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.16/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.16/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.16/win64/chrome-win64.zip"
+					}
+				]
+			}
+		},
+		"Dev": {
+			"channel": "Dev",
+			"version": "115.0.5750.0",
+			"revision": "1139213",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5750.0/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5750.0/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5750.0/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5750.0/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5750.0/win64/chrome-win64.zip"
+					}
+				]
+			}
+		},
+		"Canary": {
+			"channel": "Canary",
+			"version": "115.0.5759.0",
+			"revision": "1140771",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5759.0/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5759.0/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5759.0/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5759.0/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5759.0/win64/chrome-win64.zip"
+					}
+				]
+			}
+		}
+	}
+}

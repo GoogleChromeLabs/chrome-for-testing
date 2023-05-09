@@ -18,25 +18,14 @@
 // from the Chromium Dash API, and then prints the corresponding
 // Chrome for Testing download URLs + their HTTP status codes.
 
-const platforms = new Set([
-	'linux64',
-	'mac-arm64',
-	'mac-x64',
-	'win32',
-	'win64',
-]);
-
-const makeDownloadUrl = ({ version, platform }) => {
-	const url = `https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${version}/${platform}/chrome-${platform}.zip`;
-	return url;
-};
+import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
 
 const checkVersion = async (version = '113.0.5672.32') => {
 	console.log(`Checking downloads for v${version}…`);
 
 	const urls = [];
 	for (const platform of platforms) {
-		const url = makeDownloadUrl({ version, platform });
+		const url = makeDownloadUrl({ version, platform, binary: 'chrome' });
 		urls.push(url);
 	}
 

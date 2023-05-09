@@ -21,19 +21,7 @@
 
 import fs from 'node:fs/promises';
 
-// Lorry download bucket labels.
-const platforms = new Set([
-	'linux64',
-	'mac-arm64',
-	'mac-x64',
-	'win32',
-	'win64',
-]);
-
-const makeDownloadUrl = ({ version, platform }) => {
-	const url = `https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${version}/${platform}/chrome-${platform}.zip`;
-	return url;
-};
+import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
 
 // Why pull in `semver.lt()` when we could instead we can have some fun?
 const reVersionNumber = /^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+).(?<patch>\d+)$/;
@@ -94,6 +82,7 @@ const findVersionForChannel = async (channel = 'Stable') => {
 		const url = makeDownloadUrl({
 			version: minVersion,
 			platform,
+			binary: 'chrome',
 		});
 		urls.push({ platform, url });
 	}
