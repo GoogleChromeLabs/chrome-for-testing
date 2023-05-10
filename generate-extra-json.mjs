@@ -16,6 +16,7 @@
 
 import fs from 'node:fs/promises';
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
+import {isOlderVersion} from './is-older-version.mjs';
 
 const readJsonFile = async (filePath) => {
 	const json = await fs.readFile(filePath, 'utf8');
@@ -26,6 +27,10 @@ const readJsonFile = async (filePath) => {
 const writeJsonFile = async (filePath, data) => {
 	const json = JSON.stringify(data, null, '\t');
 	await fs.writeFile(filePath, `${json}\n`);
+};
+
+const createTimestamp = () => {
+	return new Date().toISOString();
 };
 
 const data = await readJsonFile('./data/dashboard.json');
@@ -52,7 +57,7 @@ const prepareLastKnownGoodVersionsData = async (data) => {
 		) {
 			continue;
 		}
-		lastKnownGoodVersions.timestamp = new Date().toISOString();
+		lastKnownGoodVersions.timestamp = createTimestamp();
 		knownData.version = channelData.version;
 		knownData.revision = channelData.revision;
 	}
@@ -80,6 +85,40 @@ const addDownloadsTolastKnownGoodVersionsData = (data) => {
 	return data;
 };
 
+const updateLatestVersionsPerMilestone = async (lastKnownGoodVersionsData) => {
+	const filePath = './data/latest-versions-per-milestone.json';
+	const latestVersionsPerMilestoneData = await readJsonFile(filePath);
+	const milestones = latestVersionsPerMilestoneData.milestones;
+	let needsUpdate = false;
+
+	for (const channelData of Object.values(lastKnownGoodVersionsData.channels)) {
+		const {version, revision} = channelData;
+		const milestone = version.split('.')[0];
+		if (Object.hasOwn(milestones, milestone)) {
+			const current = milestones[milestone];
+			if (isOlderVersion(current.version, version)) {
+				needsUpdate = true;
+				current.version = version;
+				current.revision = revision;
+			}
+		} else {
+			needsUpdate = true;
+			milestones[milestone] = {
+				milestone,
+				version,
+				revision,
+			};
+		}
+	}
+
+	if (needsUpdate) {
+		latestVersionsPerMilestoneData.timestamp = createTimestamp();
+	}
+
+	await writeJsonFile(filePath, latestVersionsPerMilestoneData);
+	return latestVersionsPerMilestoneData;
+};
+
 await writeJsonFile(
 	'./data/channels-to-versions.json',
 	prepareChannelsToVersionsData(data)
@@ -95,3 +134,5 @@ await writeJsonFile(
 	'./data/last-known-good-versions-with-downloads.json',
 	addDownloadsTolastKnownGoodVersionsData(lastKnownGoodVersionsData)
 );
+
+await updateLatestVersionsPerMilestone(lastKnownGoodVersionsData);

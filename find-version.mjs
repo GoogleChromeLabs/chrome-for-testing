@@ -22,29 +22,7 @@
 import fs from 'node:fs/promises';
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-
-// Why pull in `semver.lt()` when we could instead we can have some fun?
-const reVersionNumber = /^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+).(?<patch>\d+)$/;
-const hash = (versionNumber) => {
-	// XXXXX.XXXXX.XXXXX.XXXXX
-	//       00000 00000 00000
-	//             00000 00000
-	//                   00000
-	const match = reVersionNumber.exec(versionNumber);
-	const major = BigInt(match.groups.major);
-	const minor = BigInt(match.groups.minor);
-	const build = BigInt(match.groups.build);
-	const patch = BigInt(match.groups.patch);
-	const hashed =
-		major * 1_00000_00000_00000n
-		+ minor *     1_00000_00000n
-		+ build *           1_00000n
-		+ patch;
-	return hashed;
-};
-const isOlderVersion = (a, b) => {
-	return hash(a) < hash(b);
-};
+import {isOlderVersion} from './is-older-version.mjs';
 
 const findVersionForChannel = async (channel = 'Stable') => {
 	const result = {

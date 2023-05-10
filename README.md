@@ -66,3 +66,9 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win32/c
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win64/chrome-win64.zip 200
 ❌ NOT OK
 ```
+
+## JSON API endpoints
+
+- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json)
+- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json)
+- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)
