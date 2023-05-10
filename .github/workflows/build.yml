@@ -16,9 +16,8 @@ name: 'Build and deploy'
 
 on:
   schedule:
-    # Run daily at 06:05 UTC (07:05 CET / 08:05 CEST)
-    # and 18:05 UTC (19:05 CET / 20:05 CEST).
-    - cron: '05 06,18 * * *'
+    # Run hourly at xx:05.
+    - cron: '05 * * * *'
   push:
     branches:
       - main
