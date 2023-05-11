@@ -15,8 +15,11 @@
  */
 
 import fs from 'node:fs/promises';
+
 import { escape as escapeHtml } from 'lodash-es';
 import { minify as minifyHtml } from 'html-minifier-terser';
+
+import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
 
 const OK = '\u2705';
 const NOT_OK = '\u274C';
@@ -28,6 +31,11 @@ const render = (data) => {
 		const { version, revision, downloads } = channelData;
 		const list = [];
 		for (const [binary, downloadsPerBinary] of Object.entries(downloads)) {
+			// TODO: Remove this once M115 hits Stable and we no longer need
+			// this special case.
+			if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
+				continue;
+			}
 			for (const download of downloadsPerBinary) {
 				list.push(
 					`<tr class="status-${

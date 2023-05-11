@@ -22,7 +22,7 @@
 import fs from 'node:fs/promises';
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion} from './is-older-version.mjs';
+import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
 
 const findVersionForChannel = async (channel = 'Stable') => {
 	const result = {
@@ -61,21 +61,26 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	const urls = [];
 	for (const binary of binaries) {
 		for (const platform of platforms) {
-			const url = makeDownloadUrl({
-				version: minVersion,
-				platform,
-				binary,
-			});
-			urls.push({ binary, platform, url });
+			const version = minVersion;
+			const url = makeDownloadUrl({ version, platform, binary });
+			urls.push({ binary, platform, version, url });
 		}
 	}
 
 	let hasFailure = false;
-	for (const { binary, platform, url } of urls) {
+	for (const { binary, platform, version, url } of urls) {
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
-			hasFailure = true;
+			// ChromeDriver is only available via CfT from M115 onwards.
+			const predates = predatesChromeDriverAvailability(version);
+			if (binary === 'chromedriver' && predatesChromeDriverAvailability) {
+				// Do not consider missing ChromeDriver assets a failure for
+				// versions prior to M115.
+				// TODO: Remove this extra check once M115 hits Stable.
+			} else {
+				hasFailure = true;
+			}
 		}
 		result.downloads[binary].push({ platform, url, status })
 		console.log(url, status);
