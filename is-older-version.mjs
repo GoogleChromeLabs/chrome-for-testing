@@ -39,3 +39,10 @@ const hash = (versionNumber) => {
 export const isOlderVersion = (a, b) => {
 	return hash(a) < hash(b);
 };
+
+export const predatesChromeDriverAvailability = (version) => {
+	// ChromeDriver is only available via CfT from M115 onwards.
+	const firstChromeDriverVersion = '115.0.5763.0';
+	const predates = isOlderVersion(version, firstChromeDriverVersion);
+	return predates;
+};

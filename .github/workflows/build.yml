@@ -48,8 +48,8 @@ jobs:
         run: |
           git config user.name 'Chrome for Testing bot'
           git config user.email 'mathias+cft@chromium.org'
-          git add data/{last-known-good-versions,latest-versions-per-milestone}.json
-          git commit data/{last-known-good-versions,latest-versions-per-milestone}.json -m "Update latest available version numbers" || true
+          git add data/*.json
+          git commit data/*.json -m 'Update latest available version numbers' || true
           git push
 
       - name: Deploy to gh-pages

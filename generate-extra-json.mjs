@@ -16,7 +16,7 @@
 
 import fs from 'node:fs/promises';
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion} from './is-older-version.mjs';
+import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
 
 const readJsonFile = async (filePath) => {
 	const json = await fs.readFile(filePath, 'utf8');
@@ -68,6 +68,11 @@ const addDownloadsTolastKnownGoodVersionsData = (data) => {
 	for (const channelData of Object.values(data.channels)) {
 		const downloads = channelData.downloads = {};
 		for (const binary of binaries) {
+			// TODO: Remove this once M115 hits Stable and we no longer need
+			// this special case.
+			if (binary === 'chromedriver' && predatesChromeDriverAvailability(channelData.version)) {
+				continue;
+			}
 			const downloadsForThisBinary = downloads[binary] = [];
 			for (const platform of platforms) {
 				const url = makeDownloadUrl({

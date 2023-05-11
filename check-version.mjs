@@ -24,9 +24,11 @@ const checkVersion = async (version = '113.0.5672.32') => {
 	console.log(`Checking downloads for v${version}…`);
 
 	const urls = [];
-	for (const platform of platforms) {
-		const url = makeDownloadUrl({ version, platform, binary: 'chrome' });
-		urls.push(url);
+	for (const binary of binaries) {
+		for (const platform of platforms) {
+			const url = makeDownloadUrl({ version, platform, binary });
+			urls.push(url);
+		}
 	}
 
 	let hasFailure = false;
