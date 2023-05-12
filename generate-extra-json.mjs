@@ -33,18 +33,6 @@ const createTimestamp = () => {
 	return new Date().toISOString();
 };
 
-const data = await readJsonFile('./data/dashboard.json');
-
-const prepareChannelsToVersionsData = (data) => {
-	const copy = structuredClone(data);
-	delete copy.ok;
-	for (const channelData of Object.values(copy.channels)) {
-		delete channelData.ok;
-		delete channelData.downloads;
-	}
-	return copy;
-};
-
 const prepareLastKnownGoodVersionsData = async (data) => {
 	const lastKnownGoodVersions = await readJsonFile('./data/last-known-good-versions.json');
 	for (const channelData of Object.values(data.channels)) {
@@ -64,8 +52,9 @@ const prepareLastKnownGoodVersionsData = async (data) => {
 	return lastKnownGoodVersions;
 };
 
-const addDownloadsTolastKnownGoodVersionsData = (data) => {
-	for (const channelData of Object.values(data.channels)) {
+const addDownloads = (data, key) => {
+	const copy = structuredClone(data);
+	for (const channelData of Object.values(copy[key])) {
 		const downloads = channelData.downloads = {};
 		for (const binary of binaries) {
 			// TODO: Remove this once M115 hits Stable and we no longer need
@@ -87,11 +76,10 @@ const addDownloadsTolastKnownGoodVersionsData = (data) => {
 			}
 		}
 	}
-	return data;
+	return copy;
 };
 
-const updateLatestVersionsPerMilestone = async (lastKnownGoodVersionsData) => {
-	const filePath = './data/latest-versions-per-milestone.json';
+const updateLatestVersionsPerMilestone = async (filePath, lastKnownGoodVersionsData) => {
 	const latestVersionsPerMilestoneData = await readJsonFile(filePath);
 	const milestones = latestVersionsPerMilestoneData.milestones;
 	let needsUpdate = false;
@@ -124,10 +112,7 @@ const updateLatestVersionsPerMilestone = async (lastKnownGoodVersionsData) => {
 	return latestVersionsPerMilestoneData;
 };
 
-await writeJsonFile(
-	'./data/channels-to-versions.json',
-	prepareChannelsToVersionsData(data)
-);
+const data = await readJsonFile('./data/dashboard.json');
 
 const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(data);
 await writeJsonFile(
@@ -137,7 +122,12 @@ await writeJsonFile(
 
 await writeJsonFile(
 	'./data/last-known-good-versions-with-downloads.json',
-	addDownloadsTolastKnownGoodVersionsData(lastKnownGoodVersionsData)
+	addDownloads(lastKnownGoodVersionsData, 'channels')
 );
 
-await updateLatestVersionsPerMilestone(lastKnownGoodVersionsData);
+const latestVersionsPerMilestone = await updateLatestVersionsPerMilestone('./data/latest-versions-per-milestone.json', lastKnownGoodVersionsData);
+
+await writeJsonFile(
+	'./data/latest-versions-per-milestone-with-downloads.json',
+	addDownloads(latestVersionsPerMilestone, 'milestones')
+);
