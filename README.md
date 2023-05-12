@@ -2,10 +2,27 @@
 
 ## JSON API endpoints
 
-- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json)
-- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json)
-- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)
-- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json)
+| Endpoint                                                                                                                                                       | Description                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| [`last-known-good-versions.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json)                                         | The latest versions for which all CfT assets are available for download, for each Chrome release channel (Stable/Beta/Dev/Canary). |
+| [`last-known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json)           | Same as above, but with an extra `downloads` property for each channel, listing the full download URLs per asset.                  |
+| [`latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)                               | The latest versions for which all CfT assets are available for download, for each Chrome milestone.                                |
+| [`latest-versions-per-milestone-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json) | Same as above, but with an extra `downloads` property for each milestone, listing the full download URLs per asset.                |
+
+The set of “all CfT assets” for a given Chrome version is a matrix of supported binaries × platforms.
+
+The current list of supported binaries is:
+
+- `chrome` a.k.a. Chrome for Testing
+- `chromedriver` (supported since v115.0.5763.0)
+
+The current list of supported platforms is:
+
+- `linux64`
+- `mac-arm64`
+- `mac-x64`
+- `win32`
+- `win64`
 
 ## CLI utilities
 
