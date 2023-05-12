@@ -14,20 +14,9 @@
  * limitations under the License.
  */
 
-import fs from 'node:fs/promises';
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
 import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
-
-const readJsonFile = async (filePath) => {
-	const json = await fs.readFile(filePath, 'utf8');
-	const data = JSON.parse(json);
-	return data;
-};
-
-const writeJsonFile = async (filePath, data) => {
-	const json = JSON.stringify(data, null, '\t');
-	await fs.writeFile(filePath, `${json}\n`);
-};
+import {readJsonFile, writeJsonFile} from './json-utils.mjs';
 
 const createTimestamp = () => {
 	return new Date().toISOString();
