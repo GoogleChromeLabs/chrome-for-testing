@@ -19,62 +19,91 @@ import fs from 'node:fs/promises';
 import { escape as escapeHtml } from 'lodash-es';
 import { minify as minifyHtml } from 'html-minifier-terser';
 
-import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
+import {predatesChromeDriverAvailability} from './is-older-version.mjs';
+import {readJsonFile} from './json-utils.mjs';
 
 const OK = '\u2705';
 const NOT_OK = '\u274C';
+
+const renderDownloads = (downloads, version, forceOk = false) => {
+	const list = [];
+	for (const [binary, downloadsPerBinary] of Object.entries(downloads)) {
+		// TODO: Remove this once M115 hits Stable and we no longer need
+		// this special case.
+		if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
+			continue;
+		}
+		for (const download of downloadsPerBinary) {
+			list.push(
+				`<tr class="status-${
+					(forceOk || download.status === 200) ? 'ok' : 'not-ok'
+				}"><th><code>${escapeHtml(
+					binary
+				)}</code><th><code>${escapeHtml(
+					download.platform
+				)}</code><td><code>${escapeHtml(
+					download.url
+				)}</code><td><code>${forceOk ? '200' : escapeHtml(download.status)}</code>`
+			);
+		}
+	}
+	return `
+		<div class="table-wrapper">
+			<table>
+				<thead>
+					<tr>
+						<th>Binary
+						<th>Platform
+						<th>URL
+						<th>HTTP status
+				<tbody>
+					${list.join('')}
+			</table>
+		</div>
+	`;
+};
 
 const render = (data) => {
 	const summary = [];
 	const main = [];
 	for (const [channel, channelData] of Object.entries(data.channels)) {
 		const { version, revision, downloads } = channelData;
-		const list = [];
-		for (const [binary, downloadsPerBinary] of Object.entries(downloads)) {
-			// TODO: Remove this once M115 hits Stable and we no longer need
-			// this special case.
-			if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
-				continue;
-			}
-			for (const download of downloadsPerBinary) {
-				list.push(
-					`<tr class="status-${
-						download.status === 200 ? 'ok' : 'not-ok'
-					}"><th><code>${escapeHtml(
-						binary
-					)}</code><th><code>${escapeHtml(
-						download.platform
-					)}</code><td><code>${escapeHtml(
-						download.url
-					)}</code><td><code>${escapeHtml(download.status)}</code>`
-				);
-			}
-		}
+		const isOk = channelData.ok;
 		summary.push(`
-			<tr class="status-${ channelData.ok ? 'ok' : 'not-ok' }">
+			<tr class="status-${ isOk ? 'ok' : 'not-ok' }">
 				<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
 				<td><code>${escapeHtml(version)}</code>
 				<td><code>r${escapeHtml(revision)}</code>
 				<td>${ channelData.ok ? OK : NOT_OK }
 		`);
+		if (!isOk) {
+			const {version, revision} = lastKnownGoodVersions.channels[channel];
+			summary.push(`
+				<tr class="status-ok status-fallback">
+					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)} (fallback)</a>
+					<td><code>${escapeHtml(version)}</code>
+					<td><code>r${escapeHtml(revision)}</code>
+					<td>${ OK }
+			`);
+		}
 		main.push(`
 			<section id="${escapeHtml(channel.toLowerCase())}" class="status-${
-			channelData.ok ? 'ok' : 'not-ok'
+			isOk ? 'ok' : 'not-ok'
 		}">
 				<h2>${escapeHtml(channel)}</h2>
 				<p>Version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
-				<div class="table-wrapper">
-					<table>
-						<thead>
-							<tr>
-								<th>Binary
-								<th>Platform
-								<th>URL
-								<th>HTTP status
-						<tbody>
-							${list.join('')}
-					</table>
-				</div>
+				${renderDownloads(downloads, version)}
+			`);
+		if (!isOk) {
+			const fallbackChannelData = lastKnownGoodVersions.channels[channel];
+			const fallbackVersion = fallbackChannelData.version;
+			const fallbackDownloads = fallbackChannelData.downloads;
+			main.push(`
+				<p>Fallback version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
+				${renderDownloads(fallbackDownloads, fallbackVersion, true)}
+			`);
+		}
+		main.push(`
 			</section>
 		`);
 	}
@@ -103,8 +132,8 @@ const renderIcon = (data) => {
 	)}`;
 };
 
-const json = await fs.readFile('./data/dashboard.json', 'utf8');
-const data = JSON.parse(json);
+const data = await readJsonFile('./data/dashboard.json');
+const lastKnownGoodVersions = await readJsonFile('data/last-known-good-versions-with-downloads.json');
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');
 const html = htmlTemplate.toString()
