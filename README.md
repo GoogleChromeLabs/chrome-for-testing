@@ -1,6 +1,15 @@
 # Chrome for Testing availability
 
-## Find the latest Chrome versions across channels
+## JSON API endpoints
+
+- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json)
+- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json)
+- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)
+- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json)
+
+## CLI utilities
+
+### Find the latest Chrome versions across channels
 
 ```
 $ npm run find
@@ -49,8 +58,7 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/win64/c
 ❌ NOT OK
 ```
 
-
-## Check a specific Chrome version for CfT binary availability
+### Check a specific Chrome version for CfT binary availability
 
 ```
 $ npm run check 114.0.5721.0
@@ -66,9 +74,3 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win32/c
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win64/chrome-win64.zip 200
 ❌ NOT OK
 ```
-
-## JSON API endpoints
-
-- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json)
-- [`https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json)
-- [`https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)

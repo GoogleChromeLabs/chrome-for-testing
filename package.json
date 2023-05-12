@@ -3,7 +3,7 @@
 	"scripts": {
 		"check": "node --no-warnings check-version.mjs",
 		"find": "node --no-warnings find-version.mjs",
-		"json": "node generate-extra-json.mjs && for id in channels-to-versions dashboard last-known-good-versions last-known-good-versions-with-downloads latest-versions-per-milestone; do jsesc --object --json < \"data/${id}.json\" > \"dist/${id}.json\"; done",
+		"json": "node generate-extra-json.mjs && for id in channels-to-versions dashboard last-known-good-versions last-known-good-versions-with-downloads latest-versions-per-milestone latest-versions-per-milestone-with-downloads; do jsesc --object --json < \"data/${id}.json\" > \"dist/${id}.json\"; done",
 		"render": "node generate-html.mjs",
 		"build": "npm run find && npm run json && npm run render"
 	},
