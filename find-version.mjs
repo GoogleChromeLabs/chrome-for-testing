@@ -68,13 +68,13 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	}
 
 	let hasFailure = false;
-	for (const { binary, platform, version, url } of urls) {
+	for (const {binary, platform, version, url} of urls) {
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
 			// ChromeDriver is only available via CfT from M115 onwards.
-			const predates = predatesChromeDriverAvailability(version);
-			if (binary === 'chromedriver' && predatesChromeDriverAvailability) {
+			const ignoreChromeDriver = predatesChromeDriverAvailability(version);
+			if (binary === 'chromedriver' && ignoreChromeDriver) {
 				// Do not consider missing ChromeDriver assets a failure for
 				// versions prior to M115.
 				// TODO: Remove this extra check once M115 hits Stable.

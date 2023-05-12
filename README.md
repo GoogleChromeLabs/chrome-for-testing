@@ -18,59 +18,84 @@ $ npm run find
 > node --no-warnings find-version.mjs
 
 Checking the Stable channel…
-Found versions: Set(3) { '112.0.5615.165', '112.0.5615.138', '112.0.5615.137' }
-Recommended version for Stable channel: 112.0.5615.137
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/112.0.5615.137/linux64/chrome-linux64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/112.0.5615.137/mac-arm64/chrome-mac-arm64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/112.0.5615.137/mac-x64/chrome-mac-x64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/112.0.5615.137/win32/chrome-win32.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/112.0.5615.137/win64/chrome-win64.zip 404
+Found versions: Set(2) { '113.0.5672.93', '113.0.5672.92' }
+Recommended version for Stable channel: 113.0.5672.92
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/linux64/chrome-linux64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/mac-arm64/chrome-mac-arm64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/mac-x64/chrome-mac-x64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/win32/chrome-win32.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/win64/chrome-win64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/linux64/chromedriver-linux64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/mac-arm64/chromedriver-mac-arm64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/mac-x64/chromedriver-mac-x64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/win32/chromedriver-win32.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.92/win64/chromedriver-win64.zip 404
 ❌ NOT OK
 
 Checking the Beta channel…
-Found versions: Set(1) { '113.0.5672.53' }
-Recommended version for Beta channel: 113.0.5672.53
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.53/linux64/chrome-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.53/mac-arm64/chrome-mac-arm64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.53/mac-x64/chrome-mac-x64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.53/win32/chrome-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/113.0.5672.53/win64/chrome-win64.zip 200
-❌ NOT OK
+Found versions: Set(1) { '114.0.5735.26' }
+Recommended version for Beta channel: 114.0.5735.26
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/linux64/chrome-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/mac-arm64/chrome-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/mac-x64/chrome-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/win32/chrome-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/win64/chrome-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/linux64/chromedriver-linux64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/mac-arm64/chromedriver-mac-arm64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/mac-x64/chromedriver-mac-x64.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/win32/chromedriver-win32.zip 404
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5735.26/win64/chromedriver-win64.zip 404
+✅ OK
 
 Checking the Dev channel…
-Found versions: Set(2) { '114.0.5714.0', '114.0.5696.0' }
-Recommended version for Dev channel: 114.0.5696.0
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5696.0/linux64/chrome-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5696.0/mac-arm64/chrome-mac-arm64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5696.0/mac-x64/chrome-mac-x64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5696.0/win32/chrome-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5696.0/win64/chrome-win64.zip 200
+Found versions: Set(1) { '115.0.5762.4' }
+Recommended version for Dev channel: 115.0.5762.4
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/linux64/chrome-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/mac-arm64/chrome-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/mac-x64/chrome-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/win32/chrome-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/win64/chrome-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/linux64/chromedriver-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/mac-arm64/chromedriver-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/mac-x64/chromedriver-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/win32/chromedriver-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5762.4/win64/chromedriver-win64.zip 200
 ✅ OK
 
 Checking the Canary channel…
-Found versions: Set(1) { '114.0.5723.0' }
-Recommended version for Canary channel: 114.0.5723.0
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/linux64/chrome-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/mac-arm64/chrome-mac-arm64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/mac-x64/chrome-mac-x64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/win32/chrome-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5723.0/win64/chrome-win64.zip 200
-❌ NOT OK
+Found versions: Set(2) { '115.0.5765.0', '115.0.5763.0' }
+Recommended version for Canary channel: 115.0.5763.0
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chrome-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chrome-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chrome-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chrome-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chrome-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chromedriver-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chromedriver-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chromedriver-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chromedriver-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chromedriver-win64.zip 200
+✅ OK
 ```
 
 ### Check a specific Chrome version for CfT binary availability
 
 ```
-$ npm run check 114.0.5721.0
+$ npm run check 115.0.5763.0
 
 > check
-> node --no-warnings check-version.mjs "114.0.5721.0"
+> node --no-warnings check-version.mjs "115.0.5763.0"
 
-Checking downloads for v114.0.5721.0…
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/linux64/chrome-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/mac-arm64/chrome-mac-arm64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/mac-x64/chrome-mac-x64.zip 404
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win32/chrome-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/114.0.5721.0/win64/chrome-win64.zip 200
-❌ NOT OK
+Checking downloads for v115.0.5763.0…
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chrome-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chrome-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chrome-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chrome-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chrome-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chromedriver-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chromedriver-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chromedriver-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chromedriver-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chromedriver-win64.zip 200
+✅ OK
 ```
