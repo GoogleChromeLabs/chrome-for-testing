@@ -24,7 +24,9 @@
 	.status-ok h2::after { content: ' \2705'; }
 	.status-not-ok h2::after { content: ' \274C'; }
 	.table-wrapper { overflow-x: auto; }
-	@media (width >= 60rem) {
+	/* We intentionally don’t use the modern syntax in order to support a legacy projector with an outdated built-in browser. It’s a sad story. */
+	/* @media (width >= 60rem) { */
+	@media (min-width: 42em) {
 		.summary { font-size: 2rem; }
 	}
 	a { color: #3E4FB1; }
