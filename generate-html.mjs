@@ -69,38 +69,52 @@ const render = (data) => {
 	for (const [channel, channelData] of Object.entries(data.channels)) {
 		const { version, revision, downloads } = channelData;
 		const isOk = channelData.ok;
-		summary.push(`
-			<tr class="status-${ isOk ? 'ok' : 'not-ok' }">
-				<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
-				<td><code>${escapeHtml(version)}</code>
-				<td><code>r${escapeHtml(revision)}</code>
-				<td>${ channelData.ok ? OK : NOT_OK }
-		`);
-		if (!isOk) {
-			const {version, revision} = lastKnownGoodVersions.channels[channel];
+		if (isOk) {
 			summary.push(`
-				<tr class="status-ok status-fallback">
-					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)} (fallback)</a>
+				<tr class="status-ok">
+					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
 					<td><code>${escapeHtml(version)}</code>
 					<td><code>r${escapeHtml(revision)}</code>
 					<td>${ OK }
+			`);
+		} else {
+			const fallbackData = lastKnownGoodVersions.channels[channel];
+			const fallbackVersion = fallbackData.version;
+			const fallbackRevision = fallbackData.revision;
+			summary.push(`
+				<tr class="status-ok">
+					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
+					<td><code>${escapeHtml(fallbackVersion)}</code>
+					<td><code>r${escapeHtml(fallbackRevision)}</code>
+					<td>${ OK }
+				<tr class="status-upcoming">
+					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)} (upcoming)</a>
+					<td><code>${escapeHtml(version)}</code>
+					<td><code>r${escapeHtml(revision)}</code>
+					<td>${ NOT_OK }
 			`);
 		}
 		main.push(`
 			<section id="${escapeHtml(channel.toLowerCase())}" class="status-${
 			isOk ? 'ok' : 'not-ok'
 		}">
+			`);
+		if (isOk) {
+			main.push(`
 				<h2>${escapeHtml(channel)}</h2>
 				<p>Version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
 				${renderDownloads(downloads, version)}
 			`);
-		if (!isOk) {
+		} else {
 			const fallbackChannelData = lastKnownGoodVersions.channels[channel];
 			const fallbackVersion = fallbackChannelData.version;
 			const fallbackDownloads = fallbackChannelData.downloads;
 			main.push(`
-				<p>Fallback version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
+				<h2>${escapeHtml(channel)}</h2>
+				<p>Version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
 				${renderDownloads(fallbackDownloads, fallbackVersion, true)}
+				<p>Upcoming version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
+				${renderDownloads(downloads, version)}
 			`);
 		}
 		main.push(`
