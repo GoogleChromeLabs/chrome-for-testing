@@ -41,6 +41,33 @@ const prepareLastKnownGoodVersionsData = async (data) => {
 	return lastKnownGoodVersions;
 };
 
+const updateKnownGoodVersions = async (filePath, lastKnownGoodVersions) => {
+	const knownGoodVersions = await readJsonFile(filePath);
+	const set = new Set();
+	const versions = knownGoodVersions.versions;
+	for (const entry of versions) {
+		set.add(entry.version);
+	}
+	for (const entry of Object.values(lastKnownGoodVersions.channels)) {
+		const {version, revision} = entry;
+		if (set.has(version)) {
+			continue;
+		}
+		versions.push({
+			version,
+			revision,
+		});
+		knownGoodVersions.timestamp = createTimestamp();
+	}
+	knownGoodVersions.versions.sort((a, b) => {
+		if (isOlderVersion(a.version, b.version)) return -1;
+		if (a.version === b.version) return 0; // This cannot happen.
+		return 1;
+	});
+	await writeJsonFile(filePath, knownGoodVersions);
+	return knownGoodVersions;
+};
+
 const addDownloads = (data, key) => {
 	const copy = structuredClone(data);
 	for (const channelData of Object.values(copy[key])) {
@@ -101,9 +128,9 @@ const updateLatestVersionsPerMilestone = async (filePath, lastKnownGoodVersionsD
 	return latestVersionsPerMilestoneData;
 };
 
-const data = await readJsonFile('./data/dashboard.json');
+const DASHBOARD_DATA = await readJsonFile('./data/dashboard.json');
 
-const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(data);
+const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(DASHBOARD_DATA);
 await writeJsonFile(
 	'./data/last-known-good-versions.json',
 	lastKnownGoodVersionsData
@@ -119,4 +146,11 @@ const latestVersionsPerMilestone = await updateLatestVersionsPerMilestone('./dat
 await writeJsonFile(
 	'./data/latest-versions-per-milestone-with-downloads.json',
 	addDownloads(latestVersionsPerMilestone, 'milestones')
+);
+
+const knownGoodVersions = await updateKnownGoodVersions('./data/known-good-versions.json', lastKnownGoodVersionsData);
+
+await writeJsonFile(
+	'./data/known-good-versions-with-downloads.json',
+	addDownloads(knownGoodVersions, 'versions')
 );
