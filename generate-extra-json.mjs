@@ -128,6 +128,33 @@ const updateLatestVersionsPerMilestone = async (filePath, lastKnownGoodVersionsD
 	return latestVersionsPerMilestoneData;
 };
 
+const prepareLatestPatchVersionsPerBuild = (knownGoodVersions) => {
+	const map = new Map(); // partialVersion → versionInfo
+	const re = /(?<build>.*)\.(?<patch>\d+)$/;
+	for (const entry of knownGoodVersions.versions) {
+		const version = entry.version;
+		const match = re.exec(version);
+		const {build, patch} = match.groups;
+		if (map.has(build)) {
+			const knownEntry = map.get(build);
+			if (isOlderVersion(knownEntry.version, version)) {
+				map.set(build, entry);
+			}
+		} else {
+			map.set(build, entry);
+		}
+	}
+	const result = {
+		timestamp: knownGoodVersions.timestamp,
+		builds: {},
+	};
+	const builds = result.builds;
+	for (const [partialVersion, entry] of map) {
+		builds[partialVersion] = entry;
+	}
+	return result;
+};
+
 const DASHBOARD_DATA = await readJsonFile('./data/dashboard.json');
 
 const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(DASHBOARD_DATA);
@@ -153,4 +180,15 @@ const knownGoodVersions = await updateKnownGoodVersions('./data/known-good-versi
 await writeJsonFile(
 	'./data/known-good-versions-with-downloads.json',
 	addDownloads(knownGoodVersions, 'versions')
+);
+
+const latestPatchVersionsPerBuild = prepareLatestPatchVersionsPerBuild(knownGoodVersions);
+await writeJsonFile(
+	'./data/latest-patch-versions-per-build.json',
+	latestPatchVersionsPerBuild
+);
+
+await writeJsonFile(
+	'./data/latest-patch-versions-per-build-with-downloads.json',
+	addDownloads(latestPatchVersionsPerBuild, 'builds')
 );
