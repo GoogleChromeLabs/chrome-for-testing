@@ -108,10 +108,11 @@ const render = (data) => {
 		} else {
 			const fallbackChannelData = lastKnownGoodVersions.channels[channel];
 			const fallbackVersion = fallbackChannelData.version;
+			const fallbackRevision = fallbackChannelData.revision;
 			const fallbackDownloads = fallbackChannelData.downloads;
 			main.push(`
 				<h2>${escapeHtml(channel)}</h2>
-				<p>Version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
+				<p>Version: <code>${escapeHtml(fallbackVersion)}</code> (<code>r${escapeHtml(fallbackRevision)}</code>)</p>
 				${renderDownloads(fallbackDownloads, fallbackVersion, true)}
 				<p>Upcoming version: <code>${escapeHtml(version)}</code> (<code>r${escapeHtml(revision)}</code>)</p>
 				${renderDownloads(downloads, version)}
