@@ -140,19 +140,11 @@ const render = (data) => {
 	`;
 };
 
-const renderIcon = (data) => {
-	const emoji = data.ok ? OK : NOT_OK;
-	return `data:image/svg+xml,${encodeURIComponent(
-		`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${emoji}</text></svg>`
-	)}`;
-};
-
 const data = await readJsonFile('./data/dashboard.json');
 const lastKnownGoodVersions = await readJsonFile('data/last-known-good-versions-with-downloads.json');
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');
 const html = htmlTemplate.toString()
-	.replace('%%%ICON%%%', renderIcon(data))
 	.replace('%%%DATA%%%', render(data))
 	.replace('%%%TIMESTAMP%%%', data.timestamp);
 const minifiedHtml = await minifyHtml(html, {
