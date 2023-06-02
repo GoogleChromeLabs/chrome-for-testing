@@ -4,7 +4,7 @@
 		"check": "node --no-warnings check-version.mjs",
 		"find": "node --no-warnings find-version.mjs",
 		"json": "node generate-extra-json.mjs && for id in known-good-versions known-good-versions-with-downloads last-known-good-versions last-known-good-versions-with-downloads latest-patch-versions-per-build latest-patch-versions-per-build-with-downloads latest-versions-per-milestone latest-versions-per-milestone-with-downloads; do jsesc --object --json < \"data/${id}.json\" > \"dist/${id}.json\"; done",
-		"render": "node generate-html.mjs",
+		"render": "node generate-html.mjs && cp logo.svg dist/logo.svg",
 		"build": "npm run find && npm run json && npm run render"
 	},
 	"devDependencies": {

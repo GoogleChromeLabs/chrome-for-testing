@@ -1,5 +1,7 @@
 # Chrome for Testing availability
 
+![](logo.svg)
+
 ## JSON API endpoints
 
 | Endpoint                                                                                                                                                         | Description                                                                                                                          |
