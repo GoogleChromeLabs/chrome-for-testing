@@ -3,8 +3,8 @@
 	"channels": {
 		"Stable": {
 			"channel": "Stable",
-			"version": "113.0.5672.63",
-			"revision": "1121455"
+			"version": "114.0.5735.90",
+			"revision": "1135570"
 		},
 		"Beta": {
 			"channel": "Beta",
