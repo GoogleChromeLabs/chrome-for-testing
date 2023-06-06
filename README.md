@@ -122,3 +122,23 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/c
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chromedriver-win64.zip 200
 ✅ OK
 ```
+
+## FAQ
+
+### What’s the easiest way to download Chrome for Testing binaries?
+
+Use [`@puppeteer/browsers`](https://pptr.dev/browsers-api/).
+
+### macOS says the `*.app` is damaged. What now?
+
+If you download a Chrome for Testing ZIP file _using a browser_ instead of via [`@puppeteer/browsers`](https://pptr.dev/browsers-api/), `curl`, or `wget`, you might get this warning:
+
+> “Google Chrome for Testing.app” is damaged and can’t be opened. You should move it to the Trash.
+
+This happens because macOS [Gatekeeper](https://support.apple.com/guide/security/gatekeeper-and-runtime-protection-sec5599b66df/web) sets an extended attribute that marks the ZIP file and any files within it as “downloaded via a browser” and thus potentially dangerous.
+
+To fix the problem, recursively remove the extended attribute:
+
+```sh
+xattr -cr 'Google Chrome for Testing.app'
+```
