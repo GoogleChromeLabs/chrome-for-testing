@@ -1,5 +1,9 @@
 {
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GoogleChromeLabs/chrome-for-testing"
+	},
 	"scripts": {
 		"check": "node --no-warnings check-version.mjs",
 		"find": "node --no-warnings find-version.mjs",
@@ -8,8 +12,8 @@
 		"build": "npm run find && npm run json && npm run render"
 	},
 	"devDependencies": {
-		"html-minifier-terser": "^7.2.0",
-		"jsesc": "^3.0.2",
-		"lodash-es": "^4.17.21"
+		"html-minifier-terser": "7.2.0",
+		"jsesc": "3.0.2",
+		"lodash-es": "4.17.21"
 	}
 }
