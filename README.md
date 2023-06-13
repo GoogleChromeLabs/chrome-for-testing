@@ -125,6 +125,10 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/c
 
 ## FAQ
 
+### What is Chrome for Testing?
+
+Chrome for Testing is a new Chrome flavor that specifically targets web app testing and automation use cases. Read [_Chrome for Testing: reliable downloads for browser automation_](https://developer.chrome.com/blog/chrome-for-testing/) for more details.
+
 ### What’s the easiest way to download Chrome for Testing binaries?
 
 Use [`@puppeteer/browsers`](https://pptr.dev/browsers-api/).
