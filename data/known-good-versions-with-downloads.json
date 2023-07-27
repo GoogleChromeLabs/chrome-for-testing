@@ -1,5 +1,5 @@
 {
-	"timestamp": "2023-07-26T21:08:02.609Z",
+	"timestamp": "2023-07-27T00:23:47.096Z",
 	"versions": [
 		{
 			"version": "113.0.5672.0",
@@ -7919,6 +7919,56 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5911.0/win64/chromedriver-win64.zip"
+					}
+				]
+			}
+		},
+		{
+			"version": "117.0.5912.0",
+			"revision": "1175363",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/win64/chrome-win64.zip"
+					}
+				],
+				"chromedriver": [
+					{
+						"platform": "linux64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/linux64/chromedriver-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/mac-arm64/chromedriver-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/mac-x64/chromedriver-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/win32/chromedriver-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5912.0/win64/chromedriver-win64.zip"
 					}
 				]
 			}
