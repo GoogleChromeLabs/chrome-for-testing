@@ -46,3 +46,10 @@ export const predatesChromeDriverAvailability = (version) => {
 	const predates = isOlderVersion(version, firstChromeDriverVersion);
 	return predates;
 };
+
+export const predatesChromeHeadlessShellAvailability = (version) => {
+	// chrome-headless-shell is only available via CfT from M118 onwards.
+	const firstChromeHeadlessShellVersion = '118.0.5944.0';
+	const predates = isOlderVersion(version, firstChromeHeadlessShellVersion);
+	return predates;
+};

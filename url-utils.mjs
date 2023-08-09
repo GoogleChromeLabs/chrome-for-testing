@@ -28,6 +28,7 @@ export const platforms = new Set([
 export const binaries = new Set([
 	'chrome',
 	'chromedriver',
+	'chrome-headless-shell',
 ]);
 
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {
