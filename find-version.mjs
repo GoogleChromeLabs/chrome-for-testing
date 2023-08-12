@@ -22,7 +22,7 @@
 import fs from 'node:fs/promises';
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
+import {isOlderVersion, predatesChromeDriverAvailability, predatesChromeHeadlessShellAvailability} from './is-older-version.mjs';
 
 const findVersionForChannel = async (channel = 'Stable') => {
 	const result = {
@@ -72,7 +72,15 @@ const findVersionForChannel = async (channel = 'Stable') => {
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
-			hasFailure = true;
+			const ignoreChromeDriver = binary === 'chromedriver' && predatesChromeDriverAvailability(version);
+			const ignoreChromeHeadlesShell = binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version);
+			const ignore = ignoreChromeDriver || ignoreChromeHeadlesShell;
+			if (ignore) {
+				// Do not consider missing ChromeDriver or chrome-headless-shell
+				// assets a failure for versions predating their CfT release.
+			} else {
+				hasFailure = true;
+			}
 		}
 		result.downloads[binary].push({ platform, url, status })
 		console.log(url, status);

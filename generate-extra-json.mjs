@@ -15,7 +15,7 @@
  */
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion, predatesChromeDriverAvailability} from './is-older-version.mjs';
+import {isOlderVersion, predatesChromeDriverAvailability, predatesChromeHeadlessShellAvailability} from './is-older-version.mjs';
 import {readJsonFile, writeJsonFile} from './json-utils.mjs';
 
 const createTimestamp = () => {
@@ -73,9 +73,10 @@ const addDownloads = (data, key) => {
 	for (const channelData of Object.values(copy[key])) {
 		const downloads = channelData.downloads = {};
 		for (const binary of binaries) {
-			// TODO: Remove this once M115 hits Stable and we no longer need
-			// this special case.
 			if (binary === 'chromedriver' && predatesChromeDriverAvailability(channelData.version)) {
+				continue;
+			}
+			if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(channelData.version)) {
 				continue;
 			}
 			const downloadsForThisBinary = downloads[binary] = [];
