@@ -1,53 +1,53 @@
 {
-	"timestamp": "2023-08-14T19:08:14.163Z",
+	"timestamp": "2023-08-15T17:08:15.248Z",
 	"channels": {
 		"Stable": {
 			"channel": "Stable",
-			"version": "115.0.5790.170",
-			"revision": "1148114",
+			"version": "116.0.5845.96",
+			"revision": "1160321",
 			"downloads": {
 				"chrome": [
 					{
 						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/linux64/chrome-linux64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chrome-linux64.zip"
 					},
 					{
 						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/mac-arm64/chrome-mac-arm64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/mac-arm64/chrome-mac-arm64.zip"
 					},
 					{
 						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/mac-x64/chrome-mac-x64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/mac-x64/chrome-mac-x64.zip"
 					},
 					{
 						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win32/chrome-win32.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win32/chrome-win32.zip"
 					},
 					{
 						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win64/chrome-win64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win64/chrome-win64.zip"
 					}
 				],
 				"chromedriver": [
 					{
 						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/linux64/chromedriver-linux64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/linux64/chromedriver-linux64.zip"
 					},
 					{
 						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/mac-arm64/chromedriver-mac-arm64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/mac-arm64/chromedriver-mac-arm64.zip"
 					},
 					{
 						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/mac-x64/chromedriver-mac-x64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/mac-x64/chromedriver-mac-x64.zip"
 					},
 					{
 						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win32/chromedriver-win32.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win32/chromedriver-win32.zip"
 					},
 					{
 						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5790.170/win64/chromedriver-win64.zip"
+						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/116.0.5845.96/win64/chromedriver-win64.zip"
 					}
 				]
 			}
