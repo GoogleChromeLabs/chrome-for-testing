@@ -105,22 +105,27 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/c
 ### Check a specific Chrome version for CfT binary availability
 
 ```
-$ npm run check 115.0.5763.0
+$ npm run check 118.0.5962.0
 
 > check
-> node --no-warnings check-version.mjs "115.0.5763.0"
+> node --no-warnings check-version.mjs "118.0.5962.0"
 
-Checking downloads for v115.0.5763.0…
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chrome-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chrome-mac-arm64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chrome-mac-x64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chrome-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chrome-win64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/linux64/chromedriver-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-arm64/chromedriver-mac-arm64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/mac-x64/chromedriver-mac-x64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win32/chromedriver-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/115.0.5763.0/win64/chromedriver-win64.zip 200
+Checking downloads for v118.0.5962.0…
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/linux64/chrome-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm64/chrome-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chrome-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chrome-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chrome-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/linux64/chromedriver-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm64/chromedriver-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chromedriver-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chromedriver-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chromedriver-win64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/linux64/chrome-headless-shell-linux64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm64/chrome-headless-shell-mac-arm64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chrome-headless-shell-mac-x64.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chrome-headless-shell-win32.zip 200
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chrome-headless-shell-win64.zip 200
 ✅ OK
 ```
 
