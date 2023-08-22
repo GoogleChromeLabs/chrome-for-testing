@@ -136,7 +136,7 @@ Use [`@puppeteer/browsers`](https://pptr.dev/browsers-api/).
 
 ### macOS says the `*.app` is damaged. What now?
 
-If you download a Chrome for Testing ZIP file _using a browser_ instead of via [`@puppeteer/browsers`](https://pptr.dev/browsers-api/), `curl`, or `wget`, you might get this warning:
+On macOS, if you download a Chrome for Testing ZIP file _using a browser_ instead of via [`@puppeteer/browsers`](https://pptr.dev/browsers-api/), `curl`, or `wget`, you might get this warning:
 
 > “Google Chrome for Testing.app” is damaged and can’t be opened. You should move it to the Trash.
 
