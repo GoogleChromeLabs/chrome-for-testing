@@ -36,5 +36,15 @@ const prepareMajorMinorBuildFiles = async () => {
 	}
 };
 
+const prepareChannelFiles = async () => {
+	const data = await readJsonFile('./data/last-known-good-versions.json');
+	for (const [channelName, channelData] of Object.entries(data.channels)) {
+		const fileName = `./dist/LATEST_RELEASE_${channelName.toUpperCase()}`;
+		const contents = channelData.version;
+		await fs.writeFile(fileName, contents);
+	}
+};
+
 await prepareMajorFiles();
 await prepareMajorMinorBuildFiles();
+await prepareChannelFiles();
