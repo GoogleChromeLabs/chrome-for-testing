@@ -28,7 +28,8 @@ export const platforms = new Set([
 export const binaries = new Set([
 	'chrome',
 	'chromedriver',
-	'chrome-headless-shell',
+	// TODO: Re-enable once crbug.com/1492079 is resolved.
+	//'chrome-headless-shell',
 ]);
 
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {

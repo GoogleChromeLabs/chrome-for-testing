@@ -21,7 +21,6 @@ The current list of supported binaries is:
 
 - `chrome` a.k.a. Chrome for Testing (supported since v113.0.5672.0)
 - `chromedriver` (supported since v115.0.5763.0)
-- `chrome-headless-shell` (supported since v118.0.5944.0)
 
 The current list of supported platforms is:
 
@@ -131,11 +130,6 @@ https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chromedriver-mac-x64.zip 200
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chromedriver-win32.zip 200
 https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chromedriver-win64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/linux64/chrome-headless-shell-linux64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm64/chrome-headless-shell-mac-arm64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chrome-headless-shell-mac-x64.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chrome-headless-shell-win32.zip 200
-https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chrome-headless-shell-win64.zip 200
 ✅ OK
 ```
 

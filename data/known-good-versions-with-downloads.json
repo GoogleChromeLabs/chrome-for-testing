@@ -10220,28 +10220,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5950.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -10291,28 +10269,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5951.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -10364,28 +10320,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5952.2/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -10435,28 +10369,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5953.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -10508,28 +10420,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5954.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -10579,28 +10469,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5955.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -10652,28 +10520,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5956.4/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -10723,28 +10569,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5957.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -10796,28 +10620,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5958.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -10867,28 +10669,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5959.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -10940,28 +10720,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5960.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11011,28 +10769,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5961.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11084,28 +10820,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5962.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11155,28 +10869,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5964.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11228,28 +10920,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5966.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11299,28 +10969,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5968.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11372,28 +11020,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5969.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11443,28 +11069,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5970.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11516,28 +11120,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5971.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11587,28 +11169,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5972.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11660,28 +11220,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5973.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11731,28 +11269,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5974.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11804,28 +11320,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5975.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -11875,28 +11369,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5976.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -11948,28 +11420,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5977.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12019,28 +11469,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5978.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12092,28 +11520,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5979.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12163,28 +11569,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5980.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12236,28 +11620,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5981.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12307,28 +11669,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5982.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12380,28 +11720,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12451,28 +11769,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.3/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12524,28 +11820,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.18/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12595,28 +11869,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.32/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12668,28 +11920,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.54/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12739,28 +11969,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/118.0.5993.70/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12812,28 +12020,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5997.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -12883,28 +12069,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.5999.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -12956,28 +12120,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6000.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13027,28 +12169,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6001.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13100,28 +12220,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6002.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13171,28 +12269,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6003.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13244,28 +12320,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6004.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13315,28 +12369,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6005.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13388,28 +12420,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6007.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13459,28 +12469,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6008.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13532,28 +12520,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13603,28 +12569,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6018.4/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13676,28 +12620,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6020.2/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13747,28 +12669,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6022.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13820,28 +12720,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6023.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -13891,28 +12769,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6024.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -13964,28 +12820,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6026.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14035,28 +12869,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6027.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14108,28 +12920,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6028.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14179,28 +12969,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6029.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14252,28 +13020,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6034.3/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14323,28 +13069,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6036.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14396,28 +13120,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6039.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14467,28 +13169,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6040.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14540,28 +13220,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6041.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14611,28 +13269,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6042.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14684,28 +13320,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6044.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14755,28 +13369,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14828,28 +13420,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.6/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -14899,28 +13469,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.9/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -14972,28 +13520,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.21/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15043,28 +13569,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6046.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15116,28 +13620,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6048.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15187,28 +13669,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6049.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15260,28 +13720,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6050.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15331,28 +13769,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15404,28 +13820,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6051.2/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15475,28 +13869,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6055.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15548,28 +13920,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6057.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15619,28 +13969,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6061.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15692,28 +14020,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6062.2/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15763,28 +14069,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6065.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15836,28 +14120,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6066.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -15907,28 +14169,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6067.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -15980,28 +14220,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6068.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16051,28 +14269,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6069.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16124,28 +14320,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6070.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16195,28 +14369,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6071.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16268,28 +14420,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6072.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16339,28 +14469,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6073.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16412,28 +14520,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6075.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16483,28 +14569,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6077.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16556,28 +14620,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6078.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16627,28 +14669,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6079.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16700,28 +14720,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6080.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16771,28 +14769,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6081.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16844,28 +14820,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6082.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -16915,28 +14869,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6084.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -16988,28 +14920,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6086.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -17059,28 +14969,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6087.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
@@ -17132,28 +15020,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6088.2/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -17204,28 +15070,6 @@
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/win64/chromedriver-win64.zip"
 					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.0/win64/chrome-headless-shell-win64.zip"
-					}
 				]
 			}
 		},
@@ -17275,28 +15119,6 @@
 					{
 						"platform": "win64",
 						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/win64/chromedriver-win64.zip"
-					}
-				],
-				"chrome-headless-shell": [
-					{
-						"platform": "linux64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/linux64/chrome-headless-shell-linux64.zip"
-					},
-					{
-						"platform": "mac-arm64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/mac-arm64/chrome-headless-shell-mac-arm64.zip"
-					},
-					{
-						"platform": "mac-x64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/mac-x64/chrome-headless-shell-mac-x64.zip"
-					},
-					{
-						"platform": "win32",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/win32/chrome-headless-shell-win32.zip"
-					},
-					{
-						"platform": "win64",
-						"url": "https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6089.3/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
