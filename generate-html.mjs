@@ -42,9 +42,9 @@ const renderDownloads = (downloads, version, forceOk = false) => {
 					binary
 				)}</code><th><code>${escapeHtml(
 					download.platform
-				)}</code><td><code>${escapeHtml(
+				)}</code><td><code><a href='${download.url}'>${escapeHtml(
 					download.url
-				)}</code><td><code>${forceOk ? '200' : escapeHtml(download.status)}</code>`
+				)}</a></code><td><code>${forceOk ? '200' : escapeHtml(download.status)}</code>`
 			);
 		}
 	}
