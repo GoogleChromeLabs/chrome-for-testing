@@ -21,6 +21,7 @@ The current list of supported binaries is:
 
 - `chrome` a.k.a. Chrome for Testing (supported since v113.0.5672.0)
 - `chromedriver` (supported since v115.0.5763.0)
+- `chrome-headless-shell` (supported since v120.0.6098.0)
 
 The current list of supported platforms is:
 

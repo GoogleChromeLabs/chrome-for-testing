@@ -48,9 +48,8 @@ export const predatesChromeDriverAvailability = (version) => {
 };
 
 export const predatesChromeHeadlessShellAvailability = (version) => {
-	// chrome-headless-shell is only available via CfT from MXXX onwards.
-	// TODO: Update to the oldest release containing the fixes for crbug.com/1492079.
-	const firstChromeHeadlessShellVersion = '999.0.5944.0';
+	// chrome-headless-shell is only available via CfT from M120 onwards.
+	const firstChromeHeadlessShellVersion = '120.0.6098.0';
 	const predates = isOlderVersion(version, firstChromeHeadlessShellVersion);
 	return predates;
 };
