@@ -53,6 +53,7 @@ const updateKnownGoodVersions = async (filePath, lastKnownGoodVersions) => {
 		if (set.has(version)) {
 			continue;
 		}
+		set.add(version);
 		versions.push({
 			version,
 			revision,
