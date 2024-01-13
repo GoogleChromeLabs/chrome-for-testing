@@ -34,6 +34,6 @@ export const binaries = new Set([
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {
 	assert(platforms.has(platform));
 	assert(binaries.has(binary));
-	const url = `https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${version}/${platform}/${binary}-${platform}.zip`;
+	const url = `https://storage.googleapis.com/chrome-for-testing/${version}/${platform}/${binary}-${platform}.zip`;
 	return url;
 };
