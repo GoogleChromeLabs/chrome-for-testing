@@ -1,5 +1,5 @@
 {
-	"timestamp": "2024-01-24T00:25:04.683Z",
+	"timestamp": "2024-01-24T15:08:49.326Z",
 	"milestones": {
 		"113": {
 			"milestone": "113",
@@ -50,6 +50,11 @@
 			"milestone": "122",
 			"version": "122.0.6261.3",
 			"revision": "1250580"
+		},
+		"123": {
+			"milestone": "123",
+			"version": "123.0.6262.0",
+			"revision": "1251193"
 		}
 	}
 }
