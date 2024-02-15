@@ -49,8 +49,8 @@ jobs:
           git config user.name 'Chrome for Testing bot'
           git config user.email 'mathias+cft@chromium.org'
           git add data
-          git commit data -m 'Update latest available version numbers' || true
-          git push
+          #git commit data -m 'Update latest available version numbers' || true
+          #git push
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@65b5dfd4f5bcd3a7403bbc2959c144256167464e # v4.5.0
