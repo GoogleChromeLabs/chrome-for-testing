@@ -16,6 +16,8 @@
 
 import assert from 'node:assert';
 
+import {predatesNewUrlFormat} from './is-older-version.mjs';
+
 // Lorry download bucket labels.
 export const platforms = new Set([
 	'linux64',
@@ -34,6 +36,9 @@ export const binaries = new Set([
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {
 	assert(platforms.has(platform));
 	assert(binaries.has(binary));
-	const url = `https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${version}/${platform}/${binary}-${platform}.zip`;
+	const useLegacyUrlFormat = predatesNewUrlFormat(version);
+	const url = useLegacyUrlFormat
+		? `https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/${version}/${platform}/${binary}-${platform}.zip`
+		: `https://storage.googleapis.com/chrome-for-testing-public/${version}/${platform}/${binary}-${platform}.zip`;
 	return url;
 };

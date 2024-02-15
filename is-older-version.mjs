@@ -53,3 +53,11 @@ export const predatesChromeHeadlessShellAvailability = (version) => {
 	const predates = isOlderVersion(version, firstChromeHeadlessShellVersion);
 	return predates;
 };
+
+export const predatesNewUrlFormat = (version) => {
+	// Until we migrate additional assets (WIP), versions older than this
+	// are not yet available in the new storage bucket.
+	const firstVersionUsingNewUrlFormat = '121.0.6167.85';
+	const predates = isOlderVersion(version, firstVersionUsingNewUrlFormat);
+	return predates;
+};
