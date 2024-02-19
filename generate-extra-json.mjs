@@ -224,4 +224,4 @@ const writePerVersionFiles = async () => {
   }));
 };
 
-writePerVersionFiles();
+await writePerVersionFiles();
