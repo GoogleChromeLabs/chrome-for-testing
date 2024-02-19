@@ -19,7 +19,10 @@
 // Chrome for Testing download URLs + their HTTP status codes.
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {predatesChromeDriverAvailability} from './is-older-version.mjs';
+import {
+	predatesChromeDriverAvailability,
+	predatesChromeHeadlessShellAvailability,
+} from './is-older-version.mjs';
 
 const checkVersion = async (version = '113.0.5672.32') => {
 	console.log(`Checking downloads for v${version}…`);
@@ -37,11 +40,14 @@ const checkVersion = async (version = '113.0.5672.32') => {
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
-			// ChromeDriver is only available via CfT from M115 onwards.
 			const ignoreChromeDriver = predatesChromeDriverAvailability(version);
+			const ignoreChromeHeadlessShell = predatesChromeHeadlessShellAvailability(version);
 			if (binary === 'chromedriver' && ignoreChromeDriver) {
 				// Do not consider missing ChromeDriver assets a failure for
 				// versions prior to M115.
+			} else if (binary === 'chrome-headless-shell' && ignoreChromeHeadlessShell) {
+				// Do not consider missing chrome-headless-shell assets a failure for
+				// versions prior to M120.
 			} else {
 				hasFailure = true;
 			}
