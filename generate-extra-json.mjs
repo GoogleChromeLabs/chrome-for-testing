@@ -220,7 +220,7 @@ await writeJsonFile(
 const writePerVersionFiles = async () => {
   await Promise.all(addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
     const fileName = `./dist/${release.version}.json`;
-    return writeJsonFile(fileName, release);
+    return writeMinifiedJsonFile(fileName, release);
   }));
 };
 
