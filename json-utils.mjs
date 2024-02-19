@@ -23,6 +23,11 @@ export const readJsonFile = async (filePath) => {
 };
 
 export const writeJsonFile = async (filePath, data) => {
-	const json = JSON.stringify(data, null, '\t');
-	await fs.writeFile(filePath, `${json}\n`);
+	const json = `${JSON.stringify(data, null, '\t')}\n`;
+	await fs.writeFile(filePath, json);
+};
+
+export const writeMinifiedJsonFile = async (filePath, data) => {
+	const json = JSON.stringify(data);
+	await fs.writeFile(filePath, json);
 };

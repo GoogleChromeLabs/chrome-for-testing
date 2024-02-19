@@ -20,7 +20,11 @@ import {
 	predatesChromeDriverAvailability,
 	predatesChromeHeadlessShellAvailability,
 } from './is-older-version.mjs';
-import {readJsonFile, writeJsonFile} from './json-utils.mjs';
+import {
+	readJsonFile,
+	writeJsonFile,
+	writeMinifiedJsonFile,
+} from './json-utils.mjs';
 
 const createTimestamp = () => {
 	return new Date().toISOString();
@@ -220,7 +224,7 @@ await writeJsonFile(
 const writePerVersionFiles = async () => {
   await Promise.all(addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
     const fileName = `./dist/${release.version}.json`;
-    return writeJsonFile(fileName, release);
+    return writeMinifiedJsonFile(fileName, release);
   }));
 };
 
