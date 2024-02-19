@@ -16,6 +16,12 @@
 
 import assert from 'node:assert';
 
+import {
+	predatesChromeDriverAvailability,
+	predatesChromeHeadlessShellAvailability,
+	predatesMojoJsAvailability,
+} from './is-older-version.mjs';
+
 // Lorry download bucket labels.
 export const platforms = new Set([
 	'linux64',
@@ -29,11 +35,66 @@ export const binaries = new Set([
 	'chrome',
 	'chromedriver',
 	'chrome-headless-shell',
+	'mojojs',
 ]);
 
 export const makeDownloadUrl = ({ version, platform, binary = 'chrome' }) => {
-	assert(platforms.has(platform));
 	assert(binaries.has(binary));
+	if (binary === 'mojojs') {
+		return `https://storage.googleapis.com/chrome-for-testing-public/${version}/${binary}.zip`;
+	}
+	assert(platforms.has(platform));
 	const url = `https://storage.googleapis.com/chrome-for-testing-public/${version}/${platform}/${binary}-${platform}.zip`;
 	return url;
+};
+
+export const makeDownloadsForVersion = (version) => {
+	const urls = [];
+	for (const binary of binaries) {
+		// `mojojs.zip` is platform-agnostic.
+		if (binary === 'mojojs') {
+			const url = makeDownloadUrl({ version, binary });
+			urls.push({ binary, url });
+			continue;
+		}
+		// Other CfT assets are platform-specific.
+		for (const platform of platforms) {
+			const url = makeDownloadUrl({ version, platform, binary });
+			urls.push({ binary, platform, url });
+		}
+	}
+	return urls;
+};
+
+export const checkDownloadsForVersion = async (version) => {
+	const downloads = makeDownloadsForVersion(version);
+
+	// Add `isOk` and `status` properties.
+	let hasFailure = false;
+	for (const download of downloads) {
+		const {binary, url} = download;
+		const response = await fetch(url, { method: 'head' });
+		const status = response.status;
+		if (status !== 200) {
+			const ignoreChromeDriver = binary === 'chromedriver' && predatesChromeDriverAvailability(version);
+			const ignoreChromeHeadlessShell = binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version);
+			const ignoreMojoJs = binary === 'mojojs' && predatesMojoJsAvailability(version);
+			const ignore = ignoreChromeDriver || ignoreChromeHeadlessShell || ignoreMojoJs;
+			if (ignore) {
+				// Do not consider missing ChromeDriver, chrome-headless-shell,
+				// or MojoJS assets a failure for versions predating their CfT
+				// release.
+			} else {
+				download.isOk = false;
+				hasFailure = true;
+			}
+		} else {
+			download.isOk = true;
+		}
+		download.status = status;
+	}
+	return {
+		downloads,
+		isOk: !hasFailure,
+	};
 };

@@ -21,8 +21,8 @@
 
 import fs from 'node:fs/promises';
 
-import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion, predatesChromeDriverAvailability, predatesChromeHeadlessShellAvailability} from './is-older-version.mjs';
+import {binaries, checkDownloadsForVersion} from './url-utils.mjs';
+import {isOlderVersion} from './is-older-version.mjs';
 
 const findVersionForChannel = async (channel = 'Stable') => {
 	const result = {
@@ -58,35 +58,17 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	result.version = minVersion;
 	result.revision = minRevision;
 
-	const urls = [];
-	for (const binary of binaries) {
-		for (const platform of platforms) {
-			const version = minVersion;
-			const url = makeDownloadUrl({ version, platform, binary });
-			urls.push({ binary, platform, version, url });
-		}
-	}
+	const version = minVersion;
 
-	let hasFailure = false;
-	for (const {binary, platform, version, url} of urls) {
-		const response = await fetch(url, { method: 'head' });
-		const status = response.status;
-		if (status !== 200) {
-			const ignoreChromeDriver = binary === 'chromedriver' && predatesChromeDriverAvailability(version);
-			const ignoreChromeHeadlesShell = binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version);
-			const ignore = ignoreChromeDriver || ignoreChromeHeadlesShell;
-			if (ignore) {
-				// Do not consider missing ChromeDriver or chrome-headless-shell
-				// assets a failure for versions predating their CfT release.
-			} else {
-				hasFailure = true;
-			}
-		}
-		result.downloads[binary].push({ platform, url, status })
+	const checked = await checkDownloadsForVersion(version);
+
+	for (const {binary, platform, url, status} of checked.downloads) {
+		result.downloads[binary].push({ platform, url, status });
 		console.log(url, status);
 	}
-	console.log(hasFailure ? '\u274C NOT OK' : '\u2705 OK');
-	result.ok = !hasFailure;
+	console.log(checked.isOk ? '\u2705 OK' : '\u274C NOT OK');
+	result.ok = checked.isOk;
+
 	return result;
 };
 

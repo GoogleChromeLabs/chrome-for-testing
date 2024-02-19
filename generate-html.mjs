@@ -34,6 +34,10 @@ const renderDownloads = (downloads, version, forceOk = false) => {
 		if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version)) {
 			continue;
 		}
+		if (binary === 'mojojs') {
+			// Exclude mojojs from the dashboard + API.
+			continue;
+		}
 		for (const download of downloadsPerBinary) {
 			list.push(
 				`<tr class="status-${

@@ -15,7 +15,11 @@
  */
 
 import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {isOlderVersion, predatesChromeDriverAvailability, predatesChromeHeadlessShellAvailability} from './is-older-version.mjs';
+import {
+	isOlderVersion,
+	predatesChromeDriverAvailability,
+	predatesChromeHeadlessShellAvailability,
+} from './is-older-version.mjs';
 import {readJsonFile, writeJsonFile} from './json-utils.mjs';
 
 const createTimestamp = () => {
@@ -74,16 +78,34 @@ const addDownloads = (data, key) => {
 	for (const channelData of Object.values(copy[key])) {
 		const downloads = channelData.downloads = {};
 		for (const binary of binaries) {
-			if (binary === 'chromedriver' && predatesChromeDriverAvailability(channelData.version)) {
+			const version = channelData.version;
+			if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
 				continue;
 			}
-			if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(channelData.version)) {
+			if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version)) {
+				continue;
+			}
+			if (binary === 'mojojs') {
+				// Exclude mojojs from the dashboard + API.
 				continue;
 			}
 			const downloadsForThisBinary = downloads[binary] = [];
+			// `mojojs.zip` is platform-agnostic. (This is dead code right now,
+			// but it’s useful in case we ever decide to include mojojs in the
+			// dashboard + API.)
+			if (binary === 'mojojs') {
+				const url = makeDownloadUrl({
+					version: version,
+					binary: binary,
+				});
+				downloadsForThisBinary.push({
+					url: url,
+				});
+				continue;
+			}
 			for (const platform of platforms) {
 				const url = makeDownloadUrl({
-					version: channelData.version,
+					version: version,
 					platform: platform,
 					binary: binary,
 				});
