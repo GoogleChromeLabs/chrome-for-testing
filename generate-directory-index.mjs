@@ -83,4 +83,4 @@ ${allFileNames.map(fileName => {
 </ul>
 `;
 const minified = await minifyHtml(html);
-await fs.writeFile('./files.html', minified);
+await fs.writeFile('./dist/files.html', minified);
