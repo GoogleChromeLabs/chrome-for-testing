@@ -216,3 +216,12 @@ await writeJsonFile(
 	'./data/latest-patch-versions-per-build-with-downloads.json',
 	addDownloads(latestPatchVersionsPerBuild, 'builds')
 );
+
+const writePerVersionFiles = async () => {
+  await Promise.all(addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
+    const fileName = `./dist/${release.version}.json`;
+    return writeJsonFile(fileName, release);
+  }));
+};
+
+writePerVersionFiles();
