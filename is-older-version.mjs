@@ -53,3 +53,10 @@ export const predatesChromeHeadlessShellAvailability = (version) => {
 	const predates = isOlderVersion(version, firstChromeHeadlessShellVersion);
 	return predates;
 };
+
+export const predatesMojoJsAvailability = (version) => {
+	// mojojs is only available via CfT from M123 onwards.
+	const firstMojoJsVersion = '123.0.6309.0';
+	const predates = isOlderVersion(version, firstMojoJsVersion);
+	return predates;
+};

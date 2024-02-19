@@ -18,44 +18,16 @@
 // from the Chromium Dash API, and then prints the corresponding
 // Chrome for Testing download URLs + their HTTP status codes.
 
-import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
-import {
-	predatesChromeDriverAvailability,
-	predatesChromeHeadlessShellAvailability,
-} from './is-older-version.mjs';
+import {checkDownloadsForVersion} from './url-utils.mjs';
 
-const checkVersion = async (version = '113.0.5672.32') => {
+const checkVersion = async (version = '123.0.6309.0') => {
 	console.log(`Checking downloads for v${version}…`);
-
-	const urls = [];
-	for (const binary of binaries) {
-		for (const platform of platforms) {
-			const url = makeDownloadUrl({ version, platform, binary });
-			urls.push({ binary, url });
-		}
-	}
-
-	let hasFailure = false;
-	for (const {binary, url} of urls) {
-		const response = await fetch(url, { method: 'head' });
-		const status = response.status;
-		if (status !== 200) {
-			const ignoreChromeDriver = predatesChromeDriverAvailability(version);
-			const ignoreChromeHeadlessShell = predatesChromeHeadlessShellAvailability(version);
-			if (binary === 'chromedriver' && ignoreChromeDriver) {
-				// Do not consider missing ChromeDriver assets a failure for
-				// versions prior to M115.
-			} else if (binary === 'chrome-headless-shell' && ignoreChromeHeadlessShell) {
-				// Do not consider missing chrome-headless-shell assets a failure for
-				// versions prior to M120.
-			} else {
-				hasFailure = true;
-			}
-		}
+	const checked = await checkDownloadsForVersion(version);
+	for (const {url, status} of checked.downloads) {
 		console.log(url, status);
 	}
-	console.log(hasFailure ? '\u274C NOT OK' : '\u2705 OK');
+	console.log(checked.isOk ? '\u2705 OK' : '\u274C NOT OK');
 };
 
-const version = process.argv[2] || '113.0.5672.32';
+const version = process.argv[2] || '123.0.6309.0';
 await checkVersion(version);
