@@ -41,7 +41,7 @@ For historical reasons, `LATEST_RELEASE_` files containing fully qualified versi
 
 These can be used instead of the `latest-versions-per-milestone`, `latest-patch-versions-per-build`, and `last-known-good-versions` [JSON API endpoints](#json-api-endpoints) respectively.
 
-Additionally, each version from the (`known-good-versions-with-downloads.json`)[https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json] is published as a separate JSON file containing its download URLs — for example, [`123.0.6309.0.json`](https://googlechromelabs.github.io/chrome-for-testing/123.0.6309.0.json).
+Additionally, each version from the [`known-good-versions-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json) is published as a separate JSON file containing its download URLs — for example, [`123.0.6309.0.json`](https://googlechromelabs.github.io/chrome-for-testing/123.0.6309.0.json).
 
 You can [browse the complete list of JSON and text files](https://googlechromelabs.github.io/chrome-for-testing/files).
 
