@@ -161,3 +161,9 @@ To fix the problem, recursively remove the extended attribute:
 ```sh
 xattr -cr 'Google Chrome for Testing.app'
 ```
+
+## Support
+
+Either [file an issue](https://github.com/GoogleChromeLabs/chrome-for-testing/issues/new) in this repository, or see existing questions with the [`chrome-for-testing`](https://stackoverflow.com/questions/tagged/chrome-for-testing) tag on Stack Overflow.
+
+**Disclaimer**: There is no official support, the above resources are best-effort only.
