@@ -164,6 +164,6 @@ xattr -cr 'Google Chrome for Testing.app'
 
 ## Support
 
-Either [file an issue](https://github.com/GoogleChromeLabs/chrome-for-testing/issues/new) in this repository, or see existing questions with the [`chrome-for-testing`](https://stackoverflow.com/questions/tagged/chrome-for-testing) tag on Stack Overflow.
-
-**Disclaimer**: There is no official support, the above resources are best-effort only.
+- For bug reports with the CfT dashboard and/or API (i.e. the code in this repository): [File an issue](https://github.com/GoogleChromeLabs/chrome-for-testing/issues)
+- For bug reports with any of the CfT binaries: File an issue for [Headless](https://goo.gle/headless-bug), [ChromeDriver](https://crbug.com/chromedriver/new), [CfT](https://goo.gle/cftbug), or https://crbug.com/new for anything else
+- For questions: Stack Overflow (unofficial), use the [`chrome-for-testing`](https://stackoverflow.com/questions/tagged/chrome-for-testing) tag
