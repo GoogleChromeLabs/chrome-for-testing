@@ -1,10 +1,10 @@
 {
-	"timestamp": "2024-06-11T10:09:36.439Z",
+	"timestamp": "2024-06-11T20:09:15.157Z",
 	"channels": {
 		"Stable": {
 			"channel": "Stable",
-			"version": "125.0.6422.141",
-			"revision": "1287751"
+			"version": "126.0.6478.55",
+			"revision": "1300313"
 		},
 		"Beta": {
 			"channel": "Beta",
