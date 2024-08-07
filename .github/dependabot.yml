@@ -11,6 +11,10 @@ updates:
       - dependency-type: "production"
     ignore:
       - dependency-name: "devtools-protocol"
+    groups:
+      all:
+        patterns:
+          - '*'
   - package-ecosystem: "github-actions" # Necessary to update action hash
     directory: "/"
     schedule:
@@ -18,3 +22,7 @@ updates:
       time: "08:00"
       timezone: "Europe/Berlin"
     open-pull-requests-limit: 2
+    groups:
+      all:
+        patterns:
+          - '*'
