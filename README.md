@@ -15,13 +15,17 @@
 | [`latest-versions-per-milestone.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone.json)                                   | The latest versions for which all CfT assets are available for download, for each Chrome milestone.                                  |
 | [`latest-versions-per-milestone-with-downloads.json`](https://googlechromelabs.github.io/chrome-for-testing/latest-versions-per-milestone-with-downloads.json)     | Same as above, but with an extra `downloads` property for each milestone, listing the full download URLs per asset.                  |
 
-The set of “all CfT assets” for a given Chrome version is a matrix of supported binaries × platforms.
+The set of “all CfT assets” for a given Chrome version is a matrix of supported [binaries](#supported-binaries) × [platforms](#supported-platforms).
+
+### Supported binaries
 
 The current list of supported binaries is:
 
 - `chrome` a.k.a. Chrome for Testing (supported since v113.0.5672.0)
 - `chromedriver` (supported since v115.0.5763.0)
 - `chrome-headless-shell` (supported since v120.0.6098.0)
+
+### Supported platforms
 
 The current list of supported platforms is:
 
