@@ -152,6 +152,16 @@ Chrome for Testing is a new Chrome flavor that specifically targets web app test
 
 Use [`@puppeteer/browsers`](https://pptr.dev/browsers-api/).
 
+### How to install the system-level dependencies required for archived `linux64` binaries?
+
+```sh
+unzip chrome-linux64.zip;
+apt update;
+while read pkg; do
+  apt-get satisfy -y --no-install-recommends "${pkg}";
+done < chrome-linux64/deb.deps;
+```
+
 ### macOS says the `*.app` is damaged. What now?
 
 On macOS, if you download a Chrome for Testing ZIP file _using a browser_ instead of via [`@puppeteer/browsers`](https://pptr.dev/browsers-api/), `curl`, or `wget`, you might get this warning:
