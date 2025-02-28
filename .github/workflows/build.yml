@@ -14,6 +14,22 @@
 
 name: 'Build and deploy'
 
+permissions:
+  actions: write
+  attestations: none
+  checks: write
+  contents: write
+  deployments: none
+  id-token: write
+  issues: none
+  discussions: none
+  packages: none
+  pages: write
+  pull-requests: none
+  repository-projects: write
+  security-events: none
+  statuses: none
+
 on:
   schedule:
     # Run hourly at xx:05.
