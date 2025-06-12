@@ -156,7 +156,7 @@ Use [`@puppeteer/browsers`](https://pptr.dev/browsers-api/).
 
 ```sh
 unzip chrome-linux64.zip;
-apt update;
+apt-get update;
 while read pkg; do
   apt-get satisfy -y --no-install-recommends "${pkg}";
 done < chrome-linux64/deb.deps;
