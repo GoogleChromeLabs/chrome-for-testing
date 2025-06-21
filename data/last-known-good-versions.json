@@ -1,5 +1,5 @@
 {
-	"timestamp": "2025-06-21T10:09:57.755Z",
+	"timestamp": "2025-06-21T22:09:25.848Z",
 	"channels": {
 		"Stable": {
 			"channel": "Stable",
@@ -18,8 +18,8 @@
 		},
 		"Canary": {
 			"channel": "Canary",
-			"version": "139.0.7252.0",
-			"revision": "1476847"
+			"version": "139.0.7253.0",
+			"revision": "1476905"
 		}
 	}
 }
