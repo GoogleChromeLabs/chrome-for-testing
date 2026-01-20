@@ -21,8 +21,10 @@
 
 import fs from 'node:fs/promises';
 
-import {binaries, checkDownloadsForVersion} from './url-utils.mjs';
-import {isOlderVersion} from './is-older-version.mjs';
+import { binaries, checkDownloadsForVersion } from './url-utils.mjs';
+import { isOlderVersion } from './is-older-version.mjs';
+
+const versionsToRevisions = new Map();
 
 const findVersionForChannel = async (channel = 'Stable') => {
 	const result = {
@@ -42,31 +44,40 @@ const findVersionForChannel = async (channel = 'Stable') => {
 
 	let minVersion = `99999.99999.99999.99999`;
 	const versions = new Set();
-	let minRevision = 9999999999999999;
 	for (const entry of data) {
 		const version = entry.version;
 		const revision = String(entry.chromium_main_branch_position);
 		versions.add(version);
+		versionsToRevisions.set(version, revision);
 		if (isOlderVersion(version, minVersion)) {
 			minVersion = version;
-			minRevision = revision;
 		}
 	}
 
 	console.log(`Found versions:`, versions);
-	console.log(`Recommended version for ${channel} channel:`, minVersion);
-	result.version = minVersion;
-	result.revision = minRevision;
 
-	const version = minVersion;
+	let desiredVersion = minVersion;
+	let checked = null;
+	for (const version of versions) {
+		checked = await checkDownloadsForVersion(version);
+		console.log(
+			`Checking version ${version}…`,
+			checked.isOk ? '\u2705 OK' : '\u274C NOT OK',
+		);
+		if (checked.isOk) {
+			desiredVersion = version;
+			break;
+		}
+	}
+	console.log(`Recommended version for ${channel} channel:`, desiredVersion);
 
-	const checked = await checkDownloadsForVersion(version);
+	result.version = desiredVersion;
+	result.revision = versionsToRevisions.get(desiredVersion);
 
-	for (const {binary, platform, url, status} of checked.downloads) {
+	for (const { binary, platform, url, status } of checked.downloads) {
 		result.downloads[binary].push({ platform, url, status });
 		console.log(url, status);
 	}
-	console.log(checked.isOk ? '\u2705 OK' : '\u274C NOT OK');
 	result.ok = checked.isOk;
 
 	return result;
