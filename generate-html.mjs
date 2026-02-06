@@ -16,9 +16,12 @@
 
 import fs from 'node:fs/promises';
 
-import {predatesChromeDriverAvailability, predatesChromeHeadlessShellAvailability} from './is-older-version.mjs';
-import {readJsonFile} from './json-utils.mjs';
-import {escapeHtml, minifyHtml} from './html-utils.mjs';
+import {
+	predatesChromeDriverAvailability,
+	predatesChromeHeadlessShellAvailability,
+} from './is-older-version.mjs';
+import { readJsonFile } from './json-utils.mjs';
+import { escapeHtml, minifyHtml } from './html-utils.mjs';
 
 const OK = '\u2705';
 const NOT_OK = '\u274C';
@@ -26,10 +29,16 @@ const NOT_OK = '\u274C';
 const renderDownloads = (downloads, version, forceOk = false) => {
 	const list = [];
 	for (const [binary, downloadsPerBinary] of Object.entries(downloads)) {
-		if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
+		if (
+			binary === 'chromedriver' &&
+			predatesChromeDriverAvailability(version)
+		) {
 			continue;
 		}
-		if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version)) {
+		if (
+			binary === 'chrome-headless-shell' &&
+			predatesChromeHeadlessShellAvailability(version)
+		) {
 			continue;
 		}
 		if (binary === 'mojojs') {
@@ -39,14 +48,12 @@ const renderDownloads = (downloads, version, forceOk = false) => {
 		for (const download of downloadsPerBinary) {
 			list.push(
 				`<tr class="status-${
-					(forceOk || download.status === 200) ? 'ok' : 'not-ok'
-				}"><th><code>${escapeHtml(
-					binary
-				)}</code><th><code>${escapeHtml(
-					download.platform
+					forceOk || download.status === 200 ? 'ok' : 'not-ok'
+				}"><th><code>${escapeHtml(binary)}</code><th><code>${escapeHtml(
+					download.platform,
 				)}</code><td><code>${escapeHtml(
-					download.url
-				)}</code><td><code>${forceOk ? '200' : escapeHtml(download.status)}</code>`
+					download.url,
+				)}</code><td><code>${forceOk ? '200' : escapeHtml(download.status)}</code>`,
 			);
 		}
 	}
@@ -78,7 +85,7 @@ const render = (data) => {
 					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
 					<td><code>${escapeHtml(version)}</code>
 					<td><code>r${escapeHtml(revision)}</code>
-					<td>${ OK }
+					<td>${OK}
 			`);
 		} else {
 			const fallbackData = lastKnownGoodVersions.channels[channel];
@@ -89,18 +96,18 @@ const render = (data) => {
 					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
 					<td><code>${escapeHtml(fallbackVersion)}</code>
 					<td><code>r${escapeHtml(fallbackRevision)}</code>
-					<td>${ OK }
+					<td>${OK}
 				<tr class="status-upcoming">
 					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)} (upcoming)</a>
 					<td><code>${escapeHtml(version)}</code>
 					<td><code>r${escapeHtml(revision)}</code>
-					<td>${ NOT_OK }
+					<td>${NOT_OK}
 			`);
 		}
 		main.push(`
 			<section id="${escapeHtml(channel.toLowerCase())}" class="status-${
-			isOk ? 'ok' : 'not-ok'
-		}">
+				isOk ? 'ok' : 'not-ok'
+			}">
 			`);
 		if (isOk) {
 			main.push(`
@@ -144,10 +151,13 @@ const render = (data) => {
 };
 
 const data = await readJsonFile('./data/dashboard.json');
-const lastKnownGoodVersions = await readJsonFile('data/last-known-good-versions-with-downloads.json');
+const lastKnownGoodVersions = await readJsonFile(
+	'data/last-known-good-versions-with-downloads.json',
+);
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');
-const html = htmlTemplate.toString()
+const html = htmlTemplate
+	.toString()
 	.replace('%%%DATA%%%', render(data))
 	.replace('%%%TIMESTAMP%%%', data.timestamp);
 const minifiedHtml = await minifyHtml(html);

@@ -16,7 +16,8 @@
 
 // Why pull in `semver.lt()` when we could instead we can have some fun?
 
-const reVersionNumber = /^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+).(?<patch>\d+)$/;
+const reVersionNumber =
+	/^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+).(?<patch>\d+)$/;
 
 const hash = (versionNumber) => {
 	// XXXXX.XXXXX.XXXXX.XXXXX
@@ -28,6 +29,7 @@ const hash = (versionNumber) => {
 	const minor = BigInt(match.groups.minor);
 	const build = BigInt(match.groups.build);
 	const patch = BigInt(match.groups.patch);
+	// prettier-ignore
 	const hashed =
 		major * 1_00000_00000_00000n
 		+ minor *     1_00000_00000n

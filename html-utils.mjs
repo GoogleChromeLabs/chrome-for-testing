@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import {minify} from 'html-minifier-terser';
-import {escape} from 'lodash-es';
+import { minify } from 'html-minifier-terser';
+import { escape } from 'lodash-es';
 
 export const minifyHtml = async (html) => {
 	const minified = await minify(html, {

@@ -40,7 +40,7 @@ The current list of supported platforms is:
 For historical reasons, `LATEST_RELEASE_` files containing fully qualified version numbers are available as well.
 
 1. E.g. [`https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116`](https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116) answers the question “what’s the latest available version within milestone 116?”.
-1. E.g. [`https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116.0.5845`](https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116.0.5845) answers the question “what’s the latest available version within the 116.0.5845.* range?”.
+1. E.g. [`https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116.0.5845`](https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_116.0.5845) answers the question “what’s the latest available version within the 116.0.5845.\* range?”.
 1. E.g. [`https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE`](https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE) answers the question “what’s the latest available Stable channel version?”. Similar for the other channels (`BETA`/`DEV`/`CANARY`).
 
 These can be used instead of the `latest-versions-per-milestone`, `latest-patch-versions-per-build`, and `last-known-good-versions` [JSON API endpoints](#json-api-endpoints) respectively.

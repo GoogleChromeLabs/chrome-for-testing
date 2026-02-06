@@ -72,14 +72,19 @@ export const checkDownloadsForVersion = async (version) => {
 	// Add `isOk` and `status` properties.
 	let hasFailure = false;
 	for (const download of downloads) {
-		const {binary, url} = download;
+		const { binary, url } = download;
 		const response = await fetch(url, { method: 'head' });
 		const status = response.status;
 		if (status !== 200) {
-			const ignoreChromeDriver = binary === 'chromedriver' && predatesChromeDriverAvailability(version);
-			const ignoreChromeHeadlessShell = binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version);
-			const ignoreMojoJs = binary === 'mojojs' && predatesMojoJsAvailability(version);
-			const ignore = ignoreChromeDriver || ignoreChromeHeadlessShell || ignoreMojoJs;
+			const ignoreChromeDriver =
+				binary === 'chromedriver' && predatesChromeDriverAvailability(version);
+			const ignoreChromeHeadlessShell =
+				binary === 'chrome-headless-shell' &&
+				predatesChromeHeadlessShellAvailability(version);
+			const ignoreMojoJs =
+				binary === 'mojojs' && predatesMojoJsAvailability(version);
+			const ignore =
+				ignoreChromeDriver || ignoreChromeHeadlessShell || ignoreMojoJs;
 			if (ignore) {
 				// Do not consider missing ChromeDriver, chrome-headless-shell,
 				// or MojoJS assets a failure for versions predating their CfT

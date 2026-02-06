@@ -16,7 +16,7 @@
 
 import fs from 'node:fs/promises';
 
-import {readJsonFile} from './json-utils.mjs';
+import { readJsonFile } from './json-utils.mjs';
 
 const prepareMajorFiles = async () => {
 	const data = await readJsonFile('./data/latest-versions-per-milestone.json');
@@ -28,7 +28,9 @@ const prepareMajorFiles = async () => {
 };
 
 const prepareMajorMinorBuildFiles = async () => {
-	const data = await readJsonFile('./data/latest-patch-versions-per-build.json');
+	const data = await readJsonFile(
+		'./data/latest-patch-versions-per-build.json',
+	);
 	for (const [build, versionData] of Object.entries(data.builds)) {
 		const fileName = `./dist/LATEST_RELEASE_${build}`;
 		const contents = versionData.version;

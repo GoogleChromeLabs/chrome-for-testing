@@ -18,12 +18,12 @@
 // from the Chromium Dash API, and then prints the corresponding
 // Chrome for Testing download URLs + their HTTP status codes.
 
-import {checkDownloadsForVersion} from './url-utils.mjs';
+import { checkDownloadsForVersion } from './url-utils.mjs';
 
 const checkVersion = async (version = '123.0.6309.0') => {
 	console.log(`Checking downloads for v${version}…`);
 	const checked = await checkDownloadsForVersion(version);
-	for (const {url, status} of checked.downloads) {
+	for (const { url, status } of checked.downloads) {
 		console.log(url, status);
 	}
 	console.log(checked.isOk ? '\u2705 OK' : '\u274C NOT OK');

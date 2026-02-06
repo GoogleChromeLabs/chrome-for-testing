@@ -16,9 +16,9 @@
 
 import fs from 'node:fs/promises';
 
-import {glob} from 'glob';
+import { glob } from 'glob';
 
-import {escapeHtml, minifyHtml} from './html-utils.mjs';
+import { escapeHtml, minifyHtml } from './html-utils.mjs';
 
 const files = await glob('./*', {
 	cwd: './dist/',
@@ -77,9 +77,11 @@ const html = `
 	a { display: block; }
 </style>
 <ul>
-${allFileNames.map(fileName => {
-	return `<li><a href="${escapeHtml(fileName)}"><code>${escapeHtml(fileName)}</code></a>`;
-}).join('\n')}
+${allFileNames
+	.map((fileName) => {
+		return `<li><a href="${escapeHtml(fileName)}"><code>${escapeHtml(fileName)}</code></a>`;
+	})
+	.join('\n')}
 </ul>
 `;
 const minified = await minifyHtml(html);
