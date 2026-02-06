@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {binaries, platforms, makeDownloadUrl} from './url-utils.mjs';
+import { binaries, platforms, makeDownloadUrl } from './url-utils.mjs';
 import {
 	isOlderVersion,
 	predatesChromeDriverAvailability,
@@ -31,7 +31,9 @@ const createTimestamp = () => {
 };
 
 const prepareLastKnownGoodVersionsData = async (data) => {
-	const lastKnownGoodVersions = await readJsonFile('./data/last-known-good-versions.json');
+	const lastKnownGoodVersions = await readJsonFile(
+		'./data/last-known-good-versions.json',
+	);
 	for (const channelData of Object.values(data.channels)) {
 		if (!channelData.ok) continue;
 		const channelName = channelData.channel;
@@ -40,6 +42,12 @@ const prepareLastKnownGoodVersionsData = async (data) => {
 			knownData.version === channelData.version &&
 			knownData.revision === channelData.revision
 		) {
+			continue;
+		}
+		// Ensure the newly reported version is not, in fact, older than
+		// the last known good version.
+		// https://github.com/GoogleChromeLabs/chrome-for-testing/issues/198
+		if (isOlderVersion(channelData.version, knownData.version)) {
 			continue;
 		}
 		lastKnownGoodVersions.timestamp = createTimestamp();
@@ -57,7 +65,7 @@ const updateKnownGoodVersions = async (filePath, lastKnownGoodVersions) => {
 		set.add(entry.version);
 	}
 	for (const entry of Object.values(lastKnownGoodVersions.channels)) {
-		const {version, revision} = entry;
+		const { version, revision } = entry;
 		if (set.has(version)) {
 			continue;
 		}
@@ -80,20 +88,26 @@ const updateKnownGoodVersions = async (filePath, lastKnownGoodVersions) => {
 const addDownloads = (data, key) => {
 	const copy = structuredClone(data);
 	for (const channelData of Object.values(copy[key])) {
-		const downloads = channelData.downloads = {};
+		const downloads = (channelData.downloads = {});
 		for (const binary of binaries) {
 			const version = channelData.version;
-			if (binary === 'chromedriver' && predatesChromeDriverAvailability(version)) {
+			if (
+				binary === 'chromedriver' &&
+				predatesChromeDriverAvailability(version)
+			) {
 				continue;
 			}
-			if (binary === 'chrome-headless-shell' && predatesChromeHeadlessShellAvailability(version)) {
+			if (
+				binary === 'chrome-headless-shell' &&
+				predatesChromeHeadlessShellAvailability(version)
+			) {
 				continue;
 			}
 			if (binary === 'mojojs') {
 				// Exclude mojojs from the dashboard + API.
 				continue;
 			}
-			const downloadsForThisBinary = downloads[binary] = [];
+			const downloadsForThisBinary = (downloads[binary] = []);
 			// `mojojs.zip` is platform-agnostic. (This is dead code right now,
 			// but it’s useful in case we ever decide to include mojojs in the
 			// dashboard + API.)
@@ -123,13 +137,16 @@ const addDownloads = (data, key) => {
 	return copy;
 };
 
-const updateLatestVersionsPerMilestone = async (filePath, lastKnownGoodVersionsData) => {
+const updateLatestVersionsPerMilestone = async (
+	filePath,
+	lastKnownGoodVersionsData,
+) => {
 	const latestVersionsPerMilestoneData = await readJsonFile(filePath);
 	const milestones = latestVersionsPerMilestoneData.milestones;
 	let needsUpdate = false;
 
 	for (const channelData of Object.values(lastKnownGoodVersionsData.channels)) {
-		const {version, revision} = channelData;
+		const { version, revision } = channelData;
 		const milestone = version.split('.')[0];
 		if (Object.hasOwn(milestones, milestone)) {
 			const current = milestones[milestone];
@@ -162,7 +179,7 @@ const prepareLatestPatchVersionsPerBuild = (knownGoodVersions) => {
 	for (const entry of knownGoodVersions.versions) {
 		const version = entry.version;
 		const match = re.exec(version);
-		const {build, patch} = match.groups;
+		const { build, patch } = match.groups;
 		if (map.has(build)) {
 			const knownEntry = map.get(build);
 			if (isOlderVersion(knownEntry.version, version)) {
@@ -185,47 +202,57 @@ const prepareLatestPatchVersionsPerBuild = (knownGoodVersions) => {
 
 const DASHBOARD_DATA = await readJsonFile('./data/dashboard.json');
 
-const lastKnownGoodVersionsData = await prepareLastKnownGoodVersionsData(DASHBOARD_DATA);
+const lastKnownGoodVersionsData =
+	await prepareLastKnownGoodVersionsData(DASHBOARD_DATA);
 await writeJsonFile(
 	'./data/last-known-good-versions.json',
-	lastKnownGoodVersionsData
+	lastKnownGoodVersionsData,
 );
 
 await writeJsonFile(
 	'./data/last-known-good-versions-with-downloads.json',
-	addDownloads(lastKnownGoodVersionsData, 'channels')
+	addDownloads(lastKnownGoodVersionsData, 'channels'),
 );
 
-const latestVersionsPerMilestone = await updateLatestVersionsPerMilestone('./data/latest-versions-per-milestone.json', lastKnownGoodVersionsData);
+const latestVersionsPerMilestone = await updateLatestVersionsPerMilestone(
+	'./data/latest-versions-per-milestone.json',
+	lastKnownGoodVersionsData,
+);
 
 await writeJsonFile(
 	'./data/latest-versions-per-milestone-with-downloads.json',
-	addDownloads(latestVersionsPerMilestone, 'milestones')
+	addDownloads(latestVersionsPerMilestone, 'milestones'),
 );
 
-const knownGoodVersions = await updateKnownGoodVersions('./data/known-good-versions.json', lastKnownGoodVersionsData);
+const knownGoodVersions = await updateKnownGoodVersions(
+	'./data/known-good-versions.json',
+	lastKnownGoodVersionsData,
+);
 
 await writeJsonFile(
 	'./data/known-good-versions-with-downloads.json',
-	addDownloads(knownGoodVersions, 'versions')
+	addDownloads(knownGoodVersions, 'versions'),
 );
 
-const latestPatchVersionsPerBuild = prepareLatestPatchVersionsPerBuild(knownGoodVersions);
+const latestPatchVersionsPerBuild =
+	prepareLatestPatchVersionsPerBuild(knownGoodVersions);
 await writeJsonFile(
 	'./data/latest-patch-versions-per-build.json',
-	latestPatchVersionsPerBuild
+	latestPatchVersionsPerBuild,
 );
 
 await writeJsonFile(
 	'./data/latest-patch-versions-per-build-with-downloads.json',
-	addDownloads(latestPatchVersionsPerBuild, 'builds')
+	addDownloads(latestPatchVersionsPerBuild, 'builds'),
 );
 
 const writePerVersionFiles = async () => {
-  await Promise.all(addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
-    const fileName = `./dist/${release.version}.json`;
-    return writeMinifiedJsonFile(fileName, release);
-  }));
+	await Promise.all(
+		addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
+			const fileName = `./dist/${release.version}.json`;
+			return writeMinifiedJsonFile(fileName, release);
+		}),
+	);
 };
 
 await writePerVersionFiles();
