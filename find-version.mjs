@@ -40,6 +40,9 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	console.log(`Checking the ${channel} channel…`);
 	const apiEndpoint = `https://chromiumdash.appspot.com/fetch_releases?channel=${channel}&num=1&platform=Win32,Windows,Mac,Linux`;
 	const response = await fetch(apiEndpoint);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch releases: ${response.status} ${response.statusText}`);
+	}
 	const data = await response.json();
 
 	let minVersion = `99999.99999.99999.99999`;

@@ -73,7 +73,7 @@ const renderDownloads = (downloads, version, forceOk = false) => {
 	`;
 };
 
-const render = (data) => {
+const render = (data, lastKnownGoodVersions) => {
 	const summary = [];
 	const main = [];
 	for (const [channel, channelData] of Object.entries(data.channels)) {
@@ -150,15 +150,28 @@ const render = (data) => {
 	`;
 };
 
-const data = await readJsonFile('./data/dashboard.json');
-const lastKnownGoodVersions = await readJsonFile(
-	'data/last-known-good-versions-with-downloads.json',
-);
+let data;
+try {
+	data = await readJsonFile('./data/dashboard.json');
+} catch (error) {
+	console.error('Error reading ./data/dashboard.json:', error.message);
+	process.exit(1);
+}
+
+let lastKnownGoodVersions;
+try {
+	lastKnownGoodVersions = await readJsonFile(
+		'data/last-known-good-versions-with-downloads.json',
+	);
+} catch (error) {
+	console.error('Error reading data/last-known-good-versions-with-downloads.json:', error.message);
+	process.exit(1);
+}
 
 const htmlTemplate = await fs.readFile('./_tpl/template.html', 'utf8');
 const html = htmlTemplate
 	.toString()
-	.replace('%%%DATA%%%', render(data))
+	.replace('%%%DATA%%%', render(data, lastKnownGoodVersions))
 	.replace('%%%TIMESTAMP%%%', data.timestamp);
 const minifiedHtml = await minifyHtml(html);
 await fs.writeFile('./dist/index.html', minifiedHtml);
