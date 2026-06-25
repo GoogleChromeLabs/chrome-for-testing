@@ -17,6 +17,6 @@
 		"glob": "^13.0.6",
 		"html-minifier-terser": "7.2.0",
 		"jsesc": "3.0.2",
-		"lodash-es": "4.17.23"
+		"lodash-es": "^4.18.1"
 	}
 }
