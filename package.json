@@ -14,7 +14,7 @@
 		"build": "npm run find && npm run json && npm run txt && npm run render"
 	},
 	"devDependencies": {
-		"glob": "^10.3.10",
+		"glob": "^13.0.6",
 		"html-minifier-terser": "7.2.0",
 		"jsesc": "3.0.2",
 		"lodash-es": "4.17.23"
