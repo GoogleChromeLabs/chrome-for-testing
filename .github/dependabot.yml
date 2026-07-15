@@ -15,7 +15,7 @@ updates:
       all:
         patterns:
           - '*'
-  - package-ecosystem: "github-actions" # Necessary to update action hash
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: weekly
