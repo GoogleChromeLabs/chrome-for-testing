@@ -19,6 +19,7 @@ import {
 	isOlderVersion,
 	predatesChromeDriverAvailability,
 	predatesChromeHeadlessShellAvailability,
+	predatesLinuxArm64Availability,
 } from './is-older-version.mjs';
 import {
 	readJsonFile,
@@ -122,6 +123,12 @@ const addDownloads = (data, key) => {
 				continue;
 			}
 			for (const platform of platforms) {
+				if (
+					platform === 'linux-arm64' &&
+					predatesLinuxArm64Availability(version)
+				) {
+					continue;
+				}
 				const url = makeDownloadUrl({
 					version: version,
 					platform: platform,

@@ -62,3 +62,10 @@ export const predatesMojoJsAvailability = (version) => {
 	const predates = isOlderVersion(version, firstMojoJsVersion);
 	return predates;
 };
+
+export const predatesLinuxArm64Availability = (version) => {
+	// linux-arm64 is only available via CfT from M153 onwards.
+	const firstLinuxArm64Version = '153.0.8001.0';
+	const predates = isOlderVersion(version, firstLinuxArm64Version);
+	return predates;
+};
