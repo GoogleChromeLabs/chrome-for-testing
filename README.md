@@ -29,6 +29,7 @@ The current list of supported binaries is:
 
 The current list of supported platforms is:
 
+- `linux-arm64` (supported since v153.0.8001.0)
 - `linux64`
 - `mac-arm64`
 - `mac-x64`

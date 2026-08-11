@@ -20,10 +20,12 @@ import {
 	predatesChromeDriverAvailability,
 	predatesChromeHeadlessShellAvailability,
 	predatesMojoJsAvailability,
+	predatesLinuxArm64Availability,
 } from './is-older-version.mjs';
 
 // Lorry download bucket labels.
 export const platforms = new Set([
+	'linux-arm64',
 	'linux64',
 	'mac-arm64',
 	'mac-x64',
@@ -59,6 +61,12 @@ export const makeDownloadsForVersion = (version) => {
 		}
 		// Other CfT assets are platform-specific.
 		for (const platform of platforms) {
+			if (
+				platform === 'linux-arm64' &&
+				predatesLinuxArm64Availability(version)
+			) {
+				continue;
+			}
 			const url = makeDownloadUrl({ version, platform, binary });
 			urls.push({ binary, platform, url });
 		}
