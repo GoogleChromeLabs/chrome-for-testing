@@ -1,5 +1,5 @@
 {
-	"timestamp": "2026-08-12T19:29:02.604Z",
+	"timestamp": "2026-08-13T07:37:12.461Z",
 	"builds": {
 		"113.0.5672": {
 			"version": "113.0.5672.63",
@@ -131829,6 +131829,90 @@
 					{
 						"platform": "win64",
 						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8004.0/win64/chrome-headless-shell-win64.zip"
+					}
+				]
+			}
+		},
+		"153.0.8005": {
+			"version": "153.0.8005.0",
+			"revision": "1678416",
+			"downloads": {
+				"chrome": [
+					{
+						"platform": "linux-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux-arm64/chrome-linux-arm64.zip"
+					},
+					{
+						"platform": "linux64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux64/chrome-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-arm64/chrome-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-x64/chrome-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win32/chrome-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win64/chrome-win64.zip"
+					}
+				],
+				"chromedriver": [
+					{
+						"platform": "linux-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux-arm64/chromedriver-linux-arm64.zip"
+					},
+					{
+						"platform": "linux64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux64/chromedriver-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-arm64/chromedriver-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-x64/chromedriver-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win32/chromedriver-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win64/chromedriver-win64.zip"
+					}
+				],
+				"chrome-headless-shell": [
+					{
+						"platform": "linux-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux-arm64/chrome-headless-shell-linux-arm64.zip"
+					},
+					{
+						"platform": "linux64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/linux64/chrome-headless-shell-linux64.zip"
+					},
+					{
+						"platform": "mac-arm64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-arm64/chrome-headless-shell-mac-arm64.zip"
+					},
+					{
+						"platform": "mac-x64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/mac-x64/chrome-headless-shell-mac-x64.zip"
+					},
+					{
+						"platform": "win32",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win32/chrome-headless-shell-win32.zip"
+					},
+					{
+						"platform": "win64",
+						"url": "https://storage.googleapis.com/chrome-for-testing-public/153.0.8005.0/win64/chrome-headless-shell-win64.zip"
 					}
 				]
 			}
