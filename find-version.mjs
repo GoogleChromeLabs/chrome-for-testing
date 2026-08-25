@@ -42,30 +42,32 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	const response = await fetch(apiEndpoint);
 	const data = await response.json();
 
-	let minVersion = `99999.99999.99999.99999`;
 	const versions = new Set();
 	for (const entry of data) {
 		const version = entry.version;
 		const revision = String(entry.chromium_main_branch_position);
 		versions.add(version);
 		versionsToRevisions.set(version, revision);
-		if (isOlderVersion(version, minVersion)) {
-			minVersion = version;
-		}
 	}
 
 	console.log(`Found versions:`, versions);
 
-	let desiredVersion = minVersion;
+	const sortedVersions = Array.from(versions).sort((a, b) => {
+		if (isOlderVersion(a, b)) return -1;
+		if (isOlderVersion(b, a)) return 1;
+		return 0;
+	});
+
+	let desiredVersion = sortedVersions[0];
 	let checked = null;
-	for (const version of versions) {
+	for (const version of sortedVersions) {
+		desiredVersion = version;
 		checked = await checkDownloadsForVersion(version);
 		console.log(
 			`Checking version ${version}…`,
 			checked.isOk ? '\u2705 OK' : '\u274C NOT OK',
 		);
 		if (checked.isOk) {
-			desiredVersion = version;
 			break;
 		}
 	}
@@ -74,11 +76,13 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	result.version = desiredVersion;
 	result.revision = versionsToRevisions.get(desiredVersion);
 
-	for (const { binary, platform, url, status } of checked.downloads) {
-		result.downloads[binary].push({ platform, url, status });
-		console.log(url, status);
+	if (checked) {
+		for (const { binary, platform, url, status } of checked.downloads) {
+			result.downloads[binary].push({ platform, url, status });
+			console.log(url, status);
+		}
+		result.ok = checked.isOk;
 	}
-	result.ok = checked.isOk;
 
 	return result;
 };
