@@ -17,6 +17,7 @@
 import fs from 'node:fs/promises';
 
 import {
+	isOlderVersion,
 	predatesChromeDriverAvailability,
 	predatesChromeHeadlessShellAvailability,
 } from './is-older-version.mjs';
@@ -78,7 +79,11 @@ const render = (data) => {
 	const main = [];
 	for (const [channel, channelData] of Object.entries(data.channels)) {
 		const { version, revision, downloads } = channelData;
-		const isOk = channelData.ok;
+		const fallbackChannelData = lastKnownGoodVersions.channels[channel];
+		const fallbackVersion = fallbackChannelData.version;
+		const fallbackRevision = fallbackChannelData.revision;
+		const fallbackDownloads = fallbackChannelData.downloads;
+		const isOk = channelData.ok && !isOlderVersion(version, fallbackVersion);
 		if (isOk) {
 			summary.push(`
 				<tr class="status-ok">
@@ -88,9 +93,6 @@ const render = (data) => {
 					<td>${OK}
 			`);
 		} else {
-			const fallbackData = lastKnownGoodVersions.channels[channel];
-			const fallbackVersion = fallbackData.version;
-			const fallbackRevision = fallbackData.revision;
 			summary.push(`
 				<tr class="status-ok">
 					<th><a href="#${escapeHtml(channel.toLowerCase())}">${escapeHtml(channel)}</a>
@@ -116,10 +118,6 @@ const render = (data) => {
 				${renderDownloads(downloads, version)}
 			`);
 		} else {
-			const fallbackChannelData = lastKnownGoodVersions.channels[channel];
-			const fallbackVersion = fallbackChannelData.version;
-			const fallbackRevision = fallbackChannelData.revision;
-			const fallbackDownloads = fallbackChannelData.downloads;
 			main.push(`
 				<h2>${escapeHtml(channel)}</h2>
 				<p>Version: <code>${escapeHtml(fallbackVersion)}</code> (<code>r${escapeHtml(fallbackRevision)}</code>)</p>
