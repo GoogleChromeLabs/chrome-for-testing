@@ -202,7 +202,7 @@ const prepareLatestPatchVersionsPerBuild = (knownGoodVersions) => {
 	};
 	const builds = result.builds;
 	for (const [partialVersion, entry] of map) {
-		builds[partialVersion] = entry;
+		builds[partialVersion] = { build: partialVersion, ...entry };
 	}
 	return result;
 };
