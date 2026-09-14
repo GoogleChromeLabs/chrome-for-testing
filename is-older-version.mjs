@@ -17,7 +17,7 @@
 // Why pull in `semver.lt()` when we could instead we can have some fun?
 
 const reVersionNumber =
-	/^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+).(?<patch>\d+)$/;
+	/^(?<major>\d+)\.(?<minor>\d+)\.(?<build>\d+)\.(?<patch>\d+)$/;
 
 const hash = (versionNumber) => {
 	// XXXXX.XXXXX.XXXXX.XXXXX
