@@ -53,8 +53,8 @@ const findVersionForChannel = async (channel = 'Stable') => {
 	console.log(`Found versions:`, versions);
 
 	const sortedVersions = Array.from(versions).sort((a, b) => {
-		if (isOlderVersion(a, b)) return -1;
-		if (isOlderVersion(b, a)) return 1;
+		if (isOlderVersion(a, b)) return 1;
+		if (isOlderVersion(b, a)) return -1;
 		return 0;
 	});
 
