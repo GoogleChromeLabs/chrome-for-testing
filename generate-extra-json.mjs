@@ -236,9 +236,11 @@ const knownGoodVersions = await updateKnownGoodVersions(
 	lastKnownGoodVersionsData,
 );
 
+const knownGoodVersionsWithDownloads = addDownloads(knownGoodVersions, 'versions');
+
 await writeJsonFile(
 	'./data/known-good-versions-with-downloads.json',
-	addDownloads(knownGoodVersions, 'versions'),
+	knownGoodVersionsWithDownloads,
 );
 
 const latestPatchVersionsPerBuild =
@@ -255,7 +257,7 @@ await writeJsonFile(
 
 const writePerVersionFiles = async () => {
 	await Promise.all(
-		addDownloads(knownGoodVersions, 'versions').versions.map((release) => {
+		knownGoodVersionsWithDownloads.versions.map((release) => {
 			const fileName = `./dist/${release.version}.json`;
 			return writeMinifiedJsonFile(fileName, release);
 		}),
