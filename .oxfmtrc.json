@@ -5,7 +5,8 @@
 	"singleQuote": true,
 	"trailingComma": "all",
 	"printWidth": 80,
-	"requirePragma": false,
 	"tabWidth": 2,
-	"useTabs": true
+	"useTabs": true,
+	"sortPackageJson": false,
+	"ignorePatterns": ["data/*.json", "_tpl/template.html"]
 }
