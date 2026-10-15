@@ -236,7 +236,10 @@ const knownGoodVersions = await updateKnownGoodVersions(
 	lastKnownGoodVersionsData,
 );
 
-const knownGoodVersionsWithDownloads = addDownloads(knownGoodVersions, 'versions');
+const knownGoodVersionsWithDownloads = addDownloads(
+	knownGoodVersions,
+	'versions',
+);
 
 await writeJsonFile(
 	'./data/known-good-versions-with-downloads.json',

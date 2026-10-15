@@ -27,7 +27,12 @@ const checkVersion = async (version = '123.0.6309.0') => {
 		console.log(url, status);
 	}
 	console.log(checked.isOk ? '\u2705 OK' : '\u274C NOT OK');
+	return checked.isOk;
 };
 
 const version = process.argv[2] || '123.0.6309.0';
-await checkVersion(version);
+// Report failures to the caller so this can be used from scripts + CI.
+const isOk = await checkVersion(version);
+if (!isOk) {
+	process.exitCode = 1;
+}
